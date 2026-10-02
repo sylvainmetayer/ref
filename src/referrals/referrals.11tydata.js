@@ -11,9 +11,12 @@ export default {
     permalink: (data) => (data.draft ? false : `/${data.page.fileSlug}/`),
     slug: (data) => data.page.fileSlug,
     tintColor: (data) => data.tint || TINTS[hash(data.page.fileSlug) % TINTS.length],
+    // Parrainage sans lien ni code (ex. EDF, par téléphone) : on passe par moi
+    contactUrl: (data) =>
+      data.link || data.code ? "" : `mailto:${data.site.email}?subject=${encodeURIComponent(`Parrainage ${data.title}`)}`,
     initial: (data) => data.title.charAt(0).toUpperCase(),
     heading: (data) => {
-      const label = data.kind === "Promo" ? "Code promo" : data.code ? "Code parrainage" : "Parrainage";
+      const label = data.kind === "Promo" ? "Code promo" : data.kind === "Affiliation" ? "Lien affilié" : data.code ? "Code parrainage" : "Parrainage";
       return data.gain ? `${label} ${data.title} : ${data.gain} ${data.gainLabel || ""}`.trim() : `${label} ${data.title}`;
     },
     stepList: (data) => {

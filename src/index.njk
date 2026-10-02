@@ -45,9 +45,12 @@ metaTitle: "Codes et liens de parrainage de Sylvain"
         <code>{{ r.code }}</code>
         {%- set code = r.code %}{% set btnClass = "" %}{% set copyLabel = "Copier" %}
         {% include "copy-button.njk" %}
-        {%- else %}
-        <span class="code-box__label">Lien de parrainage</span>
+        {%- elif r.link %}
+        <span class="code-box__label">{{ "Lien affilié" if r.kind == "Affiliation" else "Lien de parrainage" }}</span>
         <a class="btn" href="/go/{{ r.slug }}" rel="sponsored nofollow">Ouvrir</a>
+        {%- else %}
+        <span class="code-box__label">Sur demande</span>
+        <a class="btn" href="{{ r.contactUrl }}">Me contacter</a>
         {%- endif %}
       </div>
     </li>

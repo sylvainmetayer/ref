@@ -19,11 +19,13 @@ narrow: true
       <div class="offer__code">{{ code }}</div>
       {%- set btnClass = "btn--lg" %}{% set copyLabel = "Copier le code" %}
       {% include "copy-button.njk" %}
-      {%- else %}
+      {%- elif link %}
       <a class="btn btn--lg" href="/go/{{ slug }}" rel="sponsored nofollow">S'inscrire avec mon lien</a>
+      {%- else %}
+      <a class="btn btn--lg" href="{{ contactUrl }}">Me contacter pour le parrainage</a>
       {%- endif %}
     </div>
-    {%- if code %}
+    {%- if code and link %}
     <a class="offer__site" href="/go/{{ slug }}" rel="sponsored nofollow">Aller sur le site de {{ title }} →</a>
     {%- endif %}
   </section>

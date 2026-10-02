@@ -29,10 +29,10 @@ collections:
     preview_path: "/{{slug}}/"
     fields:
       - { label: Nom du service, name: title, widget: string }
-      - { label: Lien de parrainage, name: link, widget: string, pattern: ["^https?://", "Doit commencer par http(s)://"] }
+      - { label: Lien de parrainage, name: link, widget: string, required: false, pattern: ["^https?://", "Doit commencer par http(s)://"], hint: "Vide et sans code = bouton « Me contacter » (parrainage sur demande)" }
       - { label: Code, name: code, widget: string, required: false, hint: "Code à copier, si le service en utilise un" }
       - { label: Catégorie, name: category, widget: string, required: false, hint: "Sert aux filtres de l'accueil. Ex. Banque, Cloud, Musique" }
-      - { label: Type, name: kind, widget: select, options: [Parrainage, Promo], default: Parrainage }
+      - { label: Type, name: kind, widget: select, options: [Parrainage, Promo, Affiliation], default: Parrainage }
       - { label: Gain (mis en avant), name: gain, widget: string, required: false, hint: "Court ! Ex. 20 €, 2 mois, -50 %" }
       - { label: Précision du gain, name: gainLabel, widget: string, required: false, hint: "Ex. offerts, de crédit, pendant 6 mois" }
       - { label: Avantage (phrase complète), name: advantage, widget: string, required: false, hint: "Utilisé dans la description SEO" }
