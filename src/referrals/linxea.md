@@ -1,6 +1,6 @@
 ---
 title: "Linxea"
-link: ""
+link: "https://linxea.mention-me.com/m/ol/zj9kcdnc-sylvain-metayer"
 code: ""
 category: "Épargne"
 kind: "Parrainage"
@@ -15,8 +15,7 @@ conditions:
   - "Nouveau client Linxea"
 metaTitle: ""
 metaDesc: "Lien de parrainage Linxea : 50 € en carte cadeau à la souscription d'une assurance-vie ou d'un PER. Mon avis : je l'ai choisi pour ses frais bas."
-# Brouillon : lien ou code de parrainage à renseigner
-draft: true
+draft: false
 ---
 
 ## Mon avis sur Linxea
