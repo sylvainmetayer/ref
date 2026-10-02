@@ -1,6 +1,6 @@
 ---
 title: "La Banque Postale"
-link: ""
+link: "https://parrainage-filleul.labanquepostale.fr?idup=293839"
 code: ""
 category: "Banque"
 kind: "Parrainage"
@@ -16,8 +16,7 @@ conditions:
 validUntil: 2026-12-31
 metaTitle: ""
 metaDesc: "Lien de parrainage La Banque Postale : 50 € pour toi à l'ouverture d'une Formule de compte, jusqu'au 31 décembre 2026. Mon avis de client de longue date."
-# Brouillon : lien ou code de parrainage à renseigner
-draft: true
+draft: false
 ---
 
 ## Mon avis sur La Banque Postale
