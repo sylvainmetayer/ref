@@ -1,6 +1,6 @@
 ---
 title: "Merci Facteur"
-link: ""
+link: "https://www.merci-facteur.com/#parrain=ekandnq"
 code: ""
 category: "Courrier"
 kind: "Parrainage"
@@ -14,8 +14,7 @@ conditions:
   - "Après 10 € d'envois de courrier"
 metaTitle: ""
 metaDesc: "Lien de parrainage Merci Facteur : 5 € offerts une fois 10 € d'envois atteints. Mon avis : pratique pour envoyer des cartes postales depuis l'appli."
-# Brouillon : lien ou code de parrainage à renseigner
-draft: true
+draft: false
 ---
 
 ## Mon avis sur Merci Facteur
