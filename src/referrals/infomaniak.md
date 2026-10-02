@@ -8,7 +8,7 @@ gain: ""
 gainLabel: ""
 advantage: ""
 tint: ""
-logo: ""
+logo: "/assets/logos/infomaniak.png"
 isNew: false
 steps:
   - "Ouvre mon lien d'affiliation."

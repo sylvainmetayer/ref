@@ -8,7 +8,7 @@ gain: "15 €"
 gainLabel: "1re location"
 advantage: "15 € de réduction sur la première location"
 tint: ""
-logo: ""
+logo: "/assets/logos/getaround.png"
 isNew: false
 metaTitle: ""
 metaDesc: "Lien de parrainage Getaround : 15 € de réduction sur ta première location de voiture entre particuliers. Mon avis de locataire sans voiture."

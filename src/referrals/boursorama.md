@@ -8,7 +8,7 @@ gain: "150 €"
 gainLabel: "max. selon l'offre"
 advantage: "Selon les offres du moment, entre 80 et 150 € offerts pour toute souscription"
 tint: ""
-logo: ""
+logo: "/assets/logos/boursorama.png"
 isNew: false
 metaTitle: "Parrainage Boursorama (BoursoBank) : jusqu'à 150 € offerts"
 metaDesc: "Lien de parrainage Boursorama (BoursoBank) : jusqu'à 150 € offerts selon l'offre du moment. Mon avis de client, du compte courant à l'assurance-vie."

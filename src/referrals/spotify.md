@@ -8,7 +8,7 @@ gain: "2 mois"
 gainLabel: "Premium offerts"
 advantage: "2 mois Premium gratuits"
 tint: ""
-logo: ""
+logo: "/assets/logos/spotify.png"
 isNew: false
 metaTitle: ""
 metaDesc: "Lien de parrainage Spotify : 2 mois de Premium offerts. Mon avis d'abonné qui écoute tous les jours, surtout pour les playlists et les recommandations."

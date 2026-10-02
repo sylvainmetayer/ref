@@ -8,7 +8,7 @@ gain: "40 €"
 gainLabel: "sur ta facture"
 advantage: "40 € sur ta facture d'électricité"
 tint: ""
-logo: ""
+logo: "/assets/logos/edf.png"
 isNew: false
 steps:
   - "Écris-moi pour obtenir le nom et l'adresse e-mail de mon contrat EDF."

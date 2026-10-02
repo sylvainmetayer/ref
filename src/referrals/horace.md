@@ -8,7 +8,7 @@ gain: "-20 %"
 gainLabel: "1re commande"
 advantage: "20 % de réduction sur la première commande"
 tint: ""
-logo: ""
+logo: "/assets/logos/horace.png"
 isNew: false
 metaTitle: ""
 metaDesc: "Lien de parrainage Horace : 20 % de réduction sur ta première commande de soins pour homme. Mon avis sur leurs parfums, déodorants et soins visage."

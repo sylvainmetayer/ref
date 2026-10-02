@@ -8,7 +8,7 @@ gain: "130 €"
 gainLabel: "max. selon l'offre"
 advantage: "Selon les offres du moment, entre 30 et 130 € offerts pour toute souscription"
 tint: ""
-logo: ""
+logo: "/assets/logos/fortuneo.png"
 isNew: false
 metaTitle: "Code parrainage Fortuneo : jusqu'à 130 € offerts"
 metaDesc: "Code parrain Fortuneo 13061272 : jusqu'à 130 € offerts selon l'offre en cours. Mon avis de client sur le compte courant et la carte en voyage."

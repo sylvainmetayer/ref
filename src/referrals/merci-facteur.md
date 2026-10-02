@@ -8,7 +8,7 @@ gain: "5 €"
 gainLabel: "offerts"
 advantage: "5 € offerts une fois 10 € d'envois atteints"
 tint: ""
-logo: ""
+logo: "/assets/logos/merci-facteur.png"
 isNew: false
 conditions:
   - "Après 10 € d'envois de courrier"

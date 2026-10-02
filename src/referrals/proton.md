@@ -8,7 +8,7 @@ gain: "20 $"
 gainLabel: "de crédit"
 advantage: "20 $ de crédit et 2 semaines d'essai sur une formule payante"
 tint: ""
-logo: ""
+logo: "/assets/logos/proton.png"
 isNew: false
 conditions:
   - "Formule payante (Mail, Drive, Pass, VPN…)"
