@@ -2,7 +2,10 @@ name = "ref"
 pages_build_output_dir = "_site"
 compatibility_date = "2026-09-01"
 
-# Événements de clic (cf. functions/_lib/track.js et README)
-[[analytics_engine_datasets]]
-binding = "EVENTS"
-dataset = "ref_events"
+# Événements de clic (cf. functions/_lib/track.js et README).
+# Désactivé : la publication des Functions échoue avec « You need to enable
+# Analytics Engine » malgré l'activation sur le compte. Sans binding, track()
+# n'écrit rien et le reste (redirections /go/, /api/event) fonctionne.
+# [[analytics_engine_datasets]]
+# binding = "EVENTS"
+# dataset = "ref_events"
