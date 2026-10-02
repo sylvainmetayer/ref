@@ -1,0 +1,75 @@
+---
+layout: base.njk
+backLink: true
+narrow: true
+---
+<main class="detail" style="--tint: {{ tintColor }}">
+  <section class="offer">
+    <div class="offer__brand">
+      {%- set r = { logo: logo, initial: initial } %}
+      {% include "logo.njk" %}
+      <div>
+        <div class="offer__name">{{ title }}</div>
+        <div class="offer__meta">{% if category %}{{ category }} · {% endif %}{{ kind }}</div>
+      </div>
+    </div>
+    <h1>{{ heading }}</h1>
+    <div class="offer__action">
+      {%- if code %}
+      <div class="offer__code">{{ code }}</div>
+      {%- set btnClass = "btn--lg" %}{% set copyLabel = "Copier le code" %}
+      {% include "copy-button.njk" %}
+      {%- else %}
+      <a class="btn btn--lg" href="/go/{{ slug }}" rel="sponsored nofollow">S'inscrire avec mon lien</a>
+      {%- endif %}
+    </div>
+    {%- if code %}
+    <a class="offer__site" href="/go/{{ slug }}" rel="sponsored nofollow">Aller sur le site de {{ title }} →</a>
+    {%- endif %}
+  </section>
+
+  <div class="panels">
+    <section class="panel">
+      <h2>En {{ stepList.length }} étapes</h2>
+      <ol class="steps">
+        {%- for step in stepList %}
+        <li><span class="steps__n">{{ loop.index }}</span><span class="steps__text">{{ step }}</span></li>
+        {%- endfor %}
+      </ol>
+    </section>
+    {%- if conditions.length or validUntil %}
+    <section class="panel">
+      <h2>Bon à savoir</h2>
+      <ul class="checklist">
+        {%- for condition in conditions %}
+        <li class="checklist__ok">{% include "icons/check.njk" %}{{ condition }}</li>
+        {%- endfor %}
+        {%- if validUntil %}
+        <li class="checklist__date">{% include "icons/clock.njk" %}Valable jusqu'au {{ validUntil | longDate }}</li>
+        {%- endif %}
+      </ul>
+    </section>
+    {%- endif %}
+  </div>
+
+  {%- if content | trim %}
+  <section class="panel prose">{{ content | safe }}</section>
+  {%- endif %}
+
+  {%- set others = collections.referrals | except(page.url) %}
+  {%- if others.length %}
+  <section>
+    <h2 class="section-title">D'autres bonus</h2>
+    <div class="others">
+      {%- for item in others | head(4) %}
+      {%- set r = item.data %}
+      <a class="other" href="{{ item.url }}" data-slug="{{ r.slug }}" style="--tint: {{ r.tintColor }}">
+        {% include "logo.njk" %}
+        <span class="other__name">{{ r.title }}</span>
+        {%- if r.gain %}<span class="other__gain">{{ r.gain }}</span>{% endif %}
+      </a>
+      {%- endfor %}
+    </div>
+  </section>
+  {%- endif %}
+</main>

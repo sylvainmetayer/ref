@@ -1,0 +1,58 @@
+# Sveltia CMS — https://github.com/sveltia/sveltia-cms
+# Connexion : "Sign in with Token" avec un fine-grained PAT GitHub
+# limité à ce dépôt, permission Contents: Read and write.
+backend:
+  name: github
+  repo: sylvainmetayer/ref
+  branch: main
+
+site_url: https://ref.sylvain.dev
+locale: fr
+
+media_folder: src/assets/logos
+public_folder: /assets/logos
+
+collections:
+  - name: referrals
+    label: Parrainages
+    label_singular: Parrainage
+    folder: src/referrals
+    extension: md
+    format: frontmatter
+    create: true
+    slug: "{{slug}}"
+    identifier_field: title
+    summary: "{{title}} — {{gain}} {{gainLabel}}"
+    sortable_fields: [title, category]
+    view_groups:
+      - { label: Catégorie, field: category }
+    preview_path: "/{{slug}}/"
+    fields:
+      - { label: Nom du service, name: title, widget: string }
+      - { label: Lien de parrainage, name: link, widget: string, pattern: ["^https?://", "Doit commencer par http(s)://"] }
+      - { label: Code, name: code, widget: string, required: false, hint: "Code à copier, si le service en utilise un" }
+      - { label: Catégorie, name: category, widget: string, required: false, hint: "Sert aux filtres de l'accueil. Ex. Banque, Cloud, Musique" }
+      - { label: Type, name: kind, widget: select, options: [Parrainage, Promo], default: Parrainage }
+      - { label: Gain (mis en avant), name: gain, widget: string, required: false, hint: "Court ! Ex. 20 €, 2 mois, -50 %" }
+      - { label: Précision du gain, name: gainLabel, widget: string, required: false, hint: "Ex. offerts, de crédit, pendant 6 mois" }
+      - { label: Avantage (phrase complète), name: advantage, widget: string, required: false, hint: "Utilisé dans la description SEO" }
+      - label: Couleur
+        name: tint
+        widget: select
+        required: false
+        hint: "Fond du logo et de la page. Vide = couleur automatique"
+        options:
+          - { label: Bleu, value: "#BFDBFE" }
+          - { label: Jaune, value: "#FDE68A" }
+          - { label: Vert, value: "#BBF7D0" }
+          - { label: Violet, value: "#DDD6FE" }
+          - { label: Rose, value: "#FBCFE8" }
+          - { label: Orange, value: "#FED7AA" }
+          - { label: Cyan, value: "#A5F3FC" }
+      - { label: Logo, name: logo, widget: image, required: false }
+      - { label: Nouveau, name: isNew, widget: boolean, default: false, required: false }
+      - { label: Étapes, name: steps, widget: list, required: false, hint: "Vide = étapes génériques" }
+      - { label: Bon à savoir, name: conditions, widget: list, required: false, hint: "Ex. Nouveaux clients uniquement" }
+      - { label: Valable jusqu'au, name: validUntil, widget: datetime, time_format: false, format: "YYYY-MM-DD", required: false }
+      - { label: Brouillon, name: draft, widget: boolean, default: false, required: false }
+      - { label: Texte de la page (SEO), name: body, widget: markdown, required: false }

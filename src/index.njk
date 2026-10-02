@@ -1,0 +1,56 @@
+---
+layout: base.njk
+metaTitle: "Codes et liens de parrainage — Sylvain"
+---
+{%- set categories = collections.referrals | categories %}
+<section class="hero">
+  <h1>Des bonus à récupérer, <mark>en un copier-coller.</mark></h1>
+  <p>Mes codes parrainage et promo, à jour. Copiez, collez à l'inscription, profitez.</p>
+</section>
+
+{%- if categories.length > 1 %}
+<nav class="filters" aria-label="Filtrer par catégorie" hidden>
+  <div class="filters__list">
+    <button type="button" class="chip" data-filter="" aria-pressed="true">Tous</button>
+    {%- for category in categories %}
+    <button type="button" class="chip" data-filter="{{ category }}" aria-pressed="false">{{ category }}</button>
+    {%- endfor %}
+  </div>
+</nav>
+{%- endif %}
+
+<main>
+  <ul class="cards">
+  {%- for item in collections.referrals %}
+    {%- set r = item.data %}
+    <li class="card" data-category="{{ r.category }}" style="--tint: {{ r.tintColor }}">
+      <div class="card__head">
+        {% include "logo.njk" %}
+        <div class="card__title">
+          <h2><a href="{{ item.url }}">{{ r.title }}</a></h2>
+          <div class="meta">
+            <span>{% if r.category %}{{ r.category }} · {% endif %}{{ r.kind }}</span>
+            {%- if r.isNew %}<span class="badge">NOUVEAU</span>{% endif %}
+          </div>
+        </div>
+        {%- if r.gain %}
+        <div class="gain">
+          <div class="gain__value">{{ r.gain }}</div>
+          {%- if r.gainLabel %}<div class="gain__label">{{ r.gainLabel }}</div>{% endif %}
+        </div>
+        {%- endif %}
+      </div>
+      <div class="code-box">
+        {%- if r.code %}
+        <code>{{ r.code }}</code>
+        {%- set code = r.code %}{% set btnClass = "" %}{% set copyLabel = "Copier" %}
+        {% include "copy-button.njk" %}
+        {%- else %}
+        <span class="code-box__label">Lien de parrainage</span>
+        <a class="btn" href="/go/{{ r.slug }}" rel="sponsored nofollow">Ouvrir</a>
+        {%- endif %}
+      </div>
+    </li>
+  {%- endfor %}
+  </ul>
+</main>
