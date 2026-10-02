@@ -1,6 +1,6 @@
 ---
 title: "Proton"
-link: ""
+link: "https://pr.tn/ref/1F6P2WFY"
 code: ""
 category: "Vie privée"
 kind: "Parrainage"
@@ -15,8 +15,7 @@ conditions:
   - "Nouveau compte Proton"
 metaTitle: ""
 metaDesc: "Lien de parrainage Proton : 20 $ de crédit et 2 semaines d'essai sur une formule payante (Mail, Pass, VPN, Drive). J'utilise SimpleLogin pour mes alias."
-# Brouillon : lien ou code de parrainage à renseigner
-draft: true
+draft: false
 ---
 
 ## Mon avis sur Proton
