@@ -9,7 +9,7 @@ gainLabel: "offerts"
 advantage: "5 € offerts une fois 10 € d'envois atteints"
 tint: ""
 logo: ""
-isNew: true
+isNew: false
 conditions:
   - "Après 10 € d'envois de courrier"
 metaTitle: ""

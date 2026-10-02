@@ -9,7 +9,7 @@ gainLabel: ""
 advantage: ""
 tint: ""
 logo: ""
-isNew: true
+isNew: false
 steps:
   - "Ouvre mon lien d'affiliation."
   - "Choisis ton offre Infomaniak et crée ton compte."

@@ -9,7 +9,7 @@ gainLabel: "de crédit"
 advantage: "20 $ de crédit et 2 semaines d'essai sur une formule payante"
 tint: ""
 logo: ""
-isNew: true
+isNew: false
 conditions:
   - "Formule payante (Mail, Drive, Pass, VPN…)"
   - "Nouveau compte Proton"
