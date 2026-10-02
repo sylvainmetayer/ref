@@ -1,11 +1,11 @@
 ---
 layout: base.njk
-metaTitle: "Codes et liens de parrainage — Sylvain"
+metaTitle: "Codes et liens de parrainage de Sylvain"
 ---
 {%- set categories = collections.referrals | categories %}
 <section class="hero">
   <h1>Des bonus à récupérer, <mark>en un copier-coller.</mark></h1>
-  <p>Mes codes parrainage et promo, à jour. Copiez, collez à l'inscription, profitez.</p>
+  <p>Mes codes parrainage et promo, à jour. Copie, colle à l'inscription, profite.</p>
 </section>
 
 {%- if categories.length > 1 %}
@@ -53,4 +53,10 @@ metaTitle: "Codes et liens de parrainage — Sylvain"
     </li>
   {%- endfor %}
   </ul>
+
+  <section class="about">
+    <h2>Comment ça marche</h2>
+    <p>Je ne mets ici que des services que j'utilise moi-même. Chaque page donne le code ou le lien, l'avantage pour toi et ce que j'en pense.</p>
+    <p>Le parrainage profite en général aux deux : tu reçois l'avantage indiqué, et j'ai souvent une petite prime de mon côté. Les conditions exactes sont celles du service au moment de ton inscription.</p>
+  </section>
 </main>

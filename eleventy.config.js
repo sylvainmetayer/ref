@@ -21,6 +21,14 @@ export default function (eleventyConfig) {
     [...new Set(items.map((item) => item.data.category).filter(Boolean))].sort((a, b) => a.localeCompare(b, "fr"))
   );
 
+  // « A, B et C » à partir des titres d'une liste de services
+  eleventyConfig.addFilter("titleList", (items) => {
+    const titles = items.map((item) => item.data.title);
+    return titles.length > 1 ? `${titles.slice(0, -1).join(", ")} et ${titles.at(-1)}` : titles.join("");
+  });
+
+  eleventyConfig.addFilter("json", (value) => JSON.stringify(value));
+
   // Autres services que celui de la page courante
   eleventyConfig.addFilter("head", (items, n) => items.slice(0, n));
   eleventyConfig.addFilter("except", (items, url) => items.filter((item) => item.url !== url));

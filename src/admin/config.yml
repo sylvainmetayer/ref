@@ -54,5 +54,7 @@ collections:
       - { label: Étapes, name: steps, widget: list, required: false, hint: "Vide = étapes génériques" }
       - { label: Bon à savoir, name: conditions, widget: list, required: false, hint: "Ex. Nouveaux clients uniquement" }
       - { label: Valable jusqu'au, name: validUntil, widget: datetime, time_format: false, format: "YYYY-MM-DD", required: false }
+      - { label: Titre Google, name: metaTitle, widget: string, required: false, hint: "Vide = « Code/Lien de parrainage X : gain ». Viser 60 caractères max." }
+      - { label: Description Google, name: metaDesc, widget: text, required: false, hint: "Vide = générée. Viser 150 caractères environ." }
       - { label: Brouillon, name: draft, widget: boolean, default: false, required: false }
       - { label: Texte de la page (SEO), name: body, widget: markdown, required: false }

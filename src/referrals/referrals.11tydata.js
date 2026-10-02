@@ -20,19 +20,24 @@ export default {
       if (data.steps?.length) return data.steps;
       return data.code
         ? [
-            "Copiez le code ci-dessus.",
-            `Ouvrez le lien et créez votre compte ${data.title}, en collant le code si demandé.`,
+            "Copie le code ci-dessus.",
+            `Ouvre le lien et crée ton compte ${data.title}, en collant le code si on te le demande.`,
             "L'avantage est appliqué selon les conditions de l'offre.",
           ]
         : [
-            "Ouvrez mon lien de parrainage.",
-            `Créez votre compte ${data.title}.`,
+            "Ouvre mon lien de parrainage.",
+            `Crée ton compte ${data.title}.`,
             "L'avantage est appliqué selon les conditions de l'offre.",
           ];
     },
-    metaTitle: (data) => data.metaTitle || `Parrainage ${data.title} : code et lien d'inscription`,
+    // Titre Google : requête visée (« code/lien parrainage X ») + avantage chiffré
+    metaTitle: (data) => {
+      if (data.metaTitle) return data.metaTitle;
+      const label = data.code ? "Code parrainage" : "Lien de parrainage";
+      return data.gain ? `${label} ${data.title} : ${data.gain} ${data.gainLabel || ""}`.trim() : `${label} ${data.title}`;
+    },
     metaDesc: (data) =>
       data.metaDesc ||
-      `Inscrivez-vous à ${data.title}${data.category ? ` (${data.category.toLowerCase()})` : ""} avec mon lien de parrainage${data.advantage ? ` : ${lowerFirst(data.advantage)}` : ""}.`,
+      `${data.advantage ? `${data.advantage} chez ${data.title}` : `Inscris-toi chez ${data.title}`} avec mon ${data.code ? "code" : "lien"} de parrainage. Mon avis sur ${data.title} et les étapes pour profiter de l'offre.`,
   },
 };

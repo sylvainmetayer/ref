@@ -164,6 +164,13 @@ a:hover { color: var(--accent); }
 .other__name { font-weight: 700; font-size: 15px; line-height: 1.2; }
 .other__gain { font-weight: 800; font-size: 19px; color: var(--accent); }
 
+/* Texte : avis sur un service, « Comment ça marche » */
+.prose h2 { margin-bottom: 10px; }
+.prose p { margin: 0 0 12px; }
+.about { max-width: 680px; margin-top: 40px; }
+.about h2 { margin: 0 0 10px; font-size: 20px; font-weight: 800; letter-spacing: -0.02em; }
+.about p { margin: 0 0 10px; color: var(--ink-soft); }
+
 /* Pied de page */
 .site-footer {
   margin-top: 48px; padding: 24px 0 40px; border-top: 1px solid var(--line);
