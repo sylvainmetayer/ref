@@ -1,14 +1,21 @@
 import { externalReferrer, track } from "../_lib/track.js";
 
-// /go/<slug> : redirige vers le lien de parrainage et compte le clic.
-// Le contexte (from, filter, ref) est ajouté en paramètres par assets/main.js ;
-// sans JS (lien partagé), on se rabat sur l'en-tête Referer.
-export async function onRequestGet({ request, env, params }) {
+// Lien de parrainage du slug demandé, ou null s'il n'existe pas
+async function resolve({ request, env, params }) {
   const url = new URL(request.url);
   const slug = (params.path || [])[0];
   const links = await env.ASSETS.fetch(new URL("/links.json", url)).then((response) => response.json());
+  return { url, slug, link: slug ? links[slug] || null : null };
+}
 
-  if (!slug || !links[slug]) {
+// /go/<slug> : redirige vers le lien de parrainage et compte le clic.
+// Le contexte (from, filter, ref) est ajouté en paramètres par assets/main.js ;
+// sans JS (lien partagé), on se rabat sur l'en-tête Referer.
+export async function onRequestGet(context) {
+  const { request, env } = context;
+  const { url, slug, link } = await resolve(context);
+
+  if (!link) {
     return Response.redirect(new URL("/", url), 302);
   }
 
@@ -20,5 +27,11 @@ export async function onRequestGet({ request, env, params }) {
     ref: url.searchParams.get("ref") ?? externalReferrer(request),
   });
 
-  return Response.redirect(links[slug], 302);
+  return Response.redirect(link, 302);
+}
+
+// HEAD (curl -I, vérificateurs de liens, aperçus) : même redirection, sans compter de clic
+export async function onRequestHead(context) {
+  const { url, link } = await resolve(context);
+  return Response.redirect(link || new URL("/", url), 302);
 }
