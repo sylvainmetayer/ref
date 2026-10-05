@@ -1,15 +1,18 @@
 ---
-title: "Boursorama"
-link: "https://bour.so/efoRVtQUcM"
-code: ""
-category: "Banque"
-kind: "Parrainage"
-gain: "150 €"
-gainLabel: "max. selon l'offre"
-advantage: "Selon les offres du moment, entre 80 et 150 € offerts pour toute souscription"
-tint: ""
-logo: "/assets/logos/boursorama.png"
+title: Boursorama
+link: https://bour.so/p/K5wXJKLYNN7
+code: ''
+category: Banque
+kind: Parrainage
+gain: 150 €
+gainLabel: max. selon l'offre
+advantage: Selon les offres du moment, entre 80 et 150 € offerts pour toute souscription
+tint: ''
+logo: /assets/logos/boursorama.png
 isNew: false
+steps: []
+conditions: []
+validUntil: ''
 metaTitle: "Parrainage Boursorama (BoursoBank) : jusqu'à 150 € offerts"
 metaDesc: "Lien de parrainage Boursorama (BoursoBank) : jusqu'à 150 € offerts selon l'offre du moment. Mon avis de client, du compte courant à l'assurance-vie."
 draft: false
