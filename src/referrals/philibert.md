@@ -4,14 +4,14 @@ link: "https://www.philibertnet.com/fr/inscription?sponsor=philibertnet%40sylvai
 code: ""
 category: "Jeux"
 kind: "Parrainage"
-gain: "5 €"
-gainLabel: "de réduction"
-advantage: "5 € de réduction sur ta première commande de jeux de société"
+gain: ""
+gainLabel: ""
+advantage: "Une réduction sur ta première commande de jeux de société"
 tint: ""
 logo: "/assets/logos/philibert.png"
 isNew: true
 metaTitle: ""
-metaDesc: "Lien de parrainage Philibert : 5 € de réduction sur ta première commande de jeux de société."
+metaDesc: "Lien de parrainage Philibert : une réduction sur ta première commande de jeux de société."
 draft: false
 ---
 
@@ -19,4 +19,4 @@ draft: false
 
 Philibert est une boutique en ligne spécialisée dans les jeux de société, basée à Strasbourg. J'y achète des jeux de temps en temps.
 
-Avec mon lien, tu as 5 € de réduction sur ta première commande.
+Avec mon lien, tu as une réduction sur ta première commande.
