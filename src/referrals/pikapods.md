@@ -21,4 +21,4 @@ draft: true
 
 ## Mon avis sur PikaPods
 
-PikaPods héberge des applications open source (Actual, Paperless, Immich et des dizaines d'autres) sur des serveurs européens, avec sauvegardes et mises à jour comprises. J'y ai pris un pod fin 2025 pour une application que je ne voulais pas maintenir moi-même sur mon homelab. Facturation à l'usage, quelques euros par mois.
+PikaPods héberge des applications open source (Actual, Paperless, Immich et des dizaines d'autres) sur des serveurs européens, avec sauvegardes et mises à jour comprises. J'y ai pris un pod pour une application que je ne voulais pas maintenir moi-même. Facturation à l'usage, quelques euros par mois.

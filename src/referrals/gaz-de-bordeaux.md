@@ -26,4 +26,4 @@ draft: true
 
 ## Mon avis sur Gaz de Bordeaux
 
-Client depuis fin 2021 pour le gaz de mon logement à Bordeaux. Fournisseur local, facturation lisible, rien à signaler en plusieurs années. Le parrainage passe par ma référence client, pas par un lien : écris-moi et je te l'envoie.
+Client depuis fin 2021 pour le gaz. Fournisseur local, facturation lisible, rien à signaler en plusieurs années. Le parrainage passe par ma référence client, pas par un lien : écris-moi et je te l'envoie.

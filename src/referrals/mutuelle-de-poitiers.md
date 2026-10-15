@@ -25,6 +25,6 @@ draft: true
 
 ## Mon avis sur la Mutuelle de Poitiers
 
-Mon assurance habitation depuis 2016, d'abord en studio étudiant puis dans chaque appartement suivant. Un dégât des eaux géré en 2019-2020 sans histoire, des attestations obtenues en deux minutes auprès de l'agence. Assureur mutualiste de l'ouest, pas le moins cher mais un interlocuteur humain.
+Mon assurance habitation depuis 2016, à travers plusieurs déménagements. Sinistre géré sans histoire, attestations obtenues en deux minutes auprès de l'agence. Assureur mutualiste de l'ouest, pas le moins cher mais un interlocuteur humain.
 
 Le programme de parrainage est reconduit chaque année avec un règlement propre : je mets à jour le montant dès que j'ai celui de l'année.
