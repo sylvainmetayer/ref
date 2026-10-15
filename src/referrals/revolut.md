@@ -1,6 +1,6 @@
 ---
 title: "Revolut"
-link: ""
+link: "https://revolut.com/referral/?referral-code=sylvaidp6n&geo-redirect"
 code: ""
 category: "Banque"
 kind: "Parrainage"
@@ -8,7 +8,7 @@ gain: "jusqu'à 200 €"
 gainLabel: "selon la campagne"
 advantage: "Une prime variable selon la campagne en cours (de 80 à 200 € constatés en 2026), parfois des mois de Premium offerts"
 tint: ""
-logo: ""
+logo: "/assets/logos/revolut.png"
 isNew: true
 steps:
   - "Ouvre mon lien de parrainage depuis ton téléphone."
@@ -20,7 +20,7 @@ conditions:
 validUntil: ""
 metaTitle: "Parrainage Revolut : jusqu'à 200 € selon la campagne"
 metaDesc: "Lien de parrainage Revolut : prime variable selon la campagne en cours, de 80 à 200 € constatés en 2026. Mon avis après plusieurs années d'usage en voyage."
-draft: true
+draft: false
 ---
 
 ## Mon avis sur Revolut

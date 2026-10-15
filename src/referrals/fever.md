@@ -1,7 +1,7 @@
 ---
 title: "Fever"
-link: ""
-code: ""
+link: "https://use.fvr.to/QRVj2DzN3Rb?ref=SYLVAINM31828"
+code: "SYLVAINM31828"
 category: "Sorties"
 kind: "Parrainage"
 gain: "5 €"
@@ -12,8 +12,7 @@ logo: "/assets/logos/fever.png"
 isNew: false
 metaTitle: ""
 metaDesc: "Code parrainage Fever : 5 € de réduction sur ton premier événement. Mon avis : je m'en sers pour trouver des idées de sorties et offrir des billets."
-# Brouillon : lien ou code de parrainage à renseigner
-draft: true
+draft: false
 ---
 
 ## Mon avis sur Fever

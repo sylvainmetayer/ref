@@ -8,7 +8,7 @@ gain: "30 €"
 gainLabel: "offerts"
 advantage: "30 € offerts sur ta souscription Bbox ou forfait mobile"
 tint: ""
-logo: ""
+logo: "/assets/logos/bouygues-telecom.png"
 isNew: true
 steps:
   - "Écris-moi ou copie le code ci-dessus."

@@ -8,7 +8,7 @@ gain: "20 €"
 gainLabel: "offerts"
 advantage: "20 € offerts sur ton contrat de gaz ou d'électricité"
 tint: ""
-logo: ""
+logo: "/assets/logos/gaz-de-bordeaux.png"
 isNew: true
 steps:
   - "Écris-moi pour obtenir ma référence client."

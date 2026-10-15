@@ -8,7 +8,7 @@ gain: ""
 gainLabel: ""
 advantage: "Une prime de parrainage selon le règlement de l'année en cours"
 tint: ""
-logo: ""
+logo: "/assets/logos/mutuelle-de-poitiers.png"
 isNew: true
 steps:
   - "Écris-moi pour obtenir mes coordonnées de sociétaire."

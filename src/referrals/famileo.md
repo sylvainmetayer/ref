@@ -1,14 +1,14 @@
 ---
 title: "Famileo"
-link: ""
-code: ""
+link: "https://www.famileo.com/"
+code: "R1DFB610"
 category: "Famille"
 kind: "Parrainage"
 gain: "1 mois"
 gainLabel: "offert"
 advantage: "Un mois de gazette offert à l'inscription"
 tint: ""
-logo: ""
+logo: "/assets/logos/famileo.png"
 isNew: true
 steps:
   - "Copie le code ci-dessus."
@@ -20,7 +20,7 @@ conditions:
 validUntil: ""
 metaTitle: "Parrainage Famileo : 1 mois de gazette offert"
 metaDesc: "Code parrainage Famileo : un mois de gazette offert à l'inscription. Mon avis après deux gazettes pour mes grands-parents et mon père."
-draft: true
+draft: false
 ---
 
 ## Mon avis sur Famileo

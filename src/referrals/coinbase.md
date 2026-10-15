@@ -8,7 +8,7 @@ gain: "15 €"
 gainLabel: "en bitcoin"
 advantage: "15 € en bitcoin après ton premier achat"
 tint: ""
-logo: ""
+logo: "/assets/logos/coinbase.png"
 isNew: true
 steps:
   - "Ouvre mon lien de parrainage et crée ton compte Coinbase."
