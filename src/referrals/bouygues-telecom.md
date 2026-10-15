@@ -11,7 +11,7 @@ tint: ""
 logo: "/assets/logos/bouygues-telecom.png"
 isNew: true
 steps:
-  - "Écris-moi ou copie le code ci-dessus."
+  - "Écris-moi pour obtenir mon code de parrainage."
   - "Souscris une Bbox ou un forfait mobile éligible en indiquant le code parrain."
   - "Garde ton abonnement au-delà des 14 jours de rétractation : les avantages sont ensuite crédités."
 conditions:
@@ -25,6 +25,6 @@ draft: true
 
 ## Mon avis sur Bouygues Telecom
 
-J'ai eu la fibre Bouygues pendant plusieurs années dans mon ancien appartement, et je gère aujourd'hui une ligne fibre Bouygues pour un proche. Pas d'incident notable, et le service client a toujours répondu quand il le fallait.
+J'ai eu la fibre Bouygues pendant plusieurs années. Pas d'incident notable, et le service client a toujours répondu quand il le fallait.
 
 Le code de parrainage se trouve dans l'espace client. Le parrain reçoit un avoir sur sa facture une fois ton abonnement confirmé.
