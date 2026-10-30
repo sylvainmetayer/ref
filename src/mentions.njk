@@ -1,0 +1,30 @@
+---
+layout: base.njk
+narrow: true
+metaTitle: "Mentions légales et confidentialité"
+metaDesc: "Qui édite ce site, qui l'héberge, ce qui est mesuré et ce que tu peux réutiliser."
+---
+<main id="contenu" class="panel prose page">
+  <h1>Mentions légales et confidentialité</h1>
+
+  <h2>Éditeur</h2>
+  <p>Site personnel de {{ site.author }}. Contact : <a href="mailto:{{ site.email }}">{{ site.email }}</a> (ouvre ta messagerie).</p>
+
+  <h2>Hébergement</h2>
+  <p>Cloudflare Pages, Cloudflare, Inc., 101 Townsend St, San Francisco, CA 94107, États-Unis.</p>
+
+  <h2>Liens de parrainage</h2>
+  <p>Les liens et codes de ce site sont des liens de parrainage ou d'affiliation : quand tu t'inscris avec, j'ai souvent une prime ou une commission. Les conditions des offres sont celles des services au moment de ton inscription.</p>
+
+  <h2>Ce qui est mesuré</h2>
+  <p>Aucun cookie, aucun compte, aucun identifiant. Le site compte :</p>
+  <ul>
+    <li>les pages vues, avec Cloudflare Web Analytics (sans cookie ni empreinte du navigateur) ;</li>
+    <li>les clics sur les liens de parrainage, les copies de code et les filtres utilisés, avec pour chaque événement le service, la page d'origine, le filtre actif, le domaine du site d'où tu arrives, ton pays et le type d'appareil (mobile ou ordinateur).</li>
+  </ul>
+  <p>Ton adresse IP n'est pas enregistrée par le site. Ces données servent seulement à savoir quels services intéressent. Pour une question sur tes données, écris à l'adresse ci-dessus.</p>
+  <p>Les polices sont hébergées sur le site : aucune requête vers Google ou un autre tiers à l'affichage d'une page, hors Cloudflare.</p>
+
+  <h2>Réutilisation</h2>
+  <p>Les textes sont sous licence <a href="https://creativecommons.org/licenses/by/4.0/deed.fr">Creative Commons BY 4.0{% include "icons/external.njk" %}</a> : tu peux les reprendre en citant la source. Les logos et noms de marques appartiennent à leurs propriétaires. Le code source est sur <a href="{{ site.repo }}" hreflang="en">GitHub (en anglais){% include "icons/external.njk" %}</a>.</p>
+</main>

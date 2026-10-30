@@ -1,3 +1,8 @@
 /*
   Strict-Transport-Security: max-age=31536000
   X-Frame-Options: DENY
+  Content-Security-Policy: default-src 'self'; script-src 'self' https://static.cloudflareinsights.com; connect-src 'self' https://cloudflareinsights.com; img-src 'self' data:; style-src 'self'; style-src-attr 'unsafe-inline'; font-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'none'
+
+# Sveltia CMS charge son script depuis unpkg et parle à l'API GitHub
+/admin/*
+  ! Content-Security-Policy

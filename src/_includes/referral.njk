@@ -1,8 +1,8 @@
 ---
 layout: base.njk
-backLink: true
 narrow: true
 ---
+<nav class="crumbs" aria-label="Fil d'Ariane"><a href="/">{% include "icons/back.njk" %}Tous les codes</a> <span aria-hidden="true">/</span> <span aria-current="page">{{ title }}</span></nav>
 <main id="contenu" class="detail" style="--tint: {{ tintColor }}">
   <section class="offer">
     <div class="offer__brand">
@@ -20,14 +20,15 @@ narrow: true
       {%- set btnClass = "btn--lg" %}{% set copyLabel = "Copier le code" %}
       {% include "copy-button.njk" %}
       {%- elif link %}
-      <a class="btn btn--lg" href="/go/{{ slug }}" rel="sponsored nofollow">S'inscrire avec mon lien</a>
+      <a class="btn btn--lg" href="/go/{{ slug }}" rel="sponsored nofollow">S'inscrire avec mon lien{% include "icons/external.njk" %}</a>
       {%- else %}
       <a class="btn btn--lg" href="{{ contactUrl }}">Me demander le parrainage par e-mail</a>
       {%- endif %}
     </div>
     {%- if code and link %}
-    <a class="offer__site" href="/go/{{ slug }}" rel="sponsored nofollow">Aller sur le site de {{ title }} <span aria-hidden="true">→</span></a>
+    <a class="offer__site" href="/go/{{ slug }}" rel="sponsored nofollow">Aller sur le site de {{ title }}{% include "icons/external.njk" %}</a>
     {%- endif %}
+    <p class="offer__disclosure">{% if kind == "Affiliation" %}Lien affilié : je touche une commission si tu t'inscris par ce lien.{% else %}Parrainage : tu reçois l'avantage indiqué, et j'ai souvent une petite prime de mon côté.{% endif %} <a href="/#comment-ca-marche">Comment ça marche</a></p>
   </section>
 
   <div class="panels">
