@@ -1,3 +1,6 @@
+import { readFile, writeFile } from "node:fs/promises";
+import { transform } from "esbuild";
+
 const shortDate = new Intl.DateTimeFormat("fr-FR", { day: "numeric", month: "short", year: "numeric" });
 const longDate = new Intl.DateTimeFormat("fr-FR", { day: "numeric", month: "long", year: "numeric" });
 
@@ -5,6 +8,16 @@ export default function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("src/assets");
   eleventyConfig.addPassthroughCopy("src/admin");
   eleventyConfig.addPassthroughCopy({ "src/_headers": "_headers", "src/favicon.svg": "favicon.svg" });
+
+  // Minification de la feuille de styles et du script à la génération (pas en --serve)
+  eleventyConfig.on("eleventy.after", async ({ dir, runMode }) => {
+    if (runMode !== "build") return;
+    for (const [file, loader] of [["assets/style.css", "css"], ["assets/main.js", "js"]]) {
+      const path = `${dir.output}/${file}`;
+      const { code } = await transform(await readFile(path, "utf8"), { loader, minify: true });
+      await writeFile(path, code);
+    }
+  });
 
   // Services publiés (draft: true exclus), triés par nom
   eleventyConfig.addCollection("referrals", (api) =>

@@ -10,7 +10,7 @@
   {%- else %}
   {%- set pageDesc = metaDesc or site.description %}
   {%- endif %}
-  <title>{{ pageTitle }}</title>
+  <title>{{ pageTitle }}{% if page.url != "/" %} · {{ site.author.split(" ")[0] }}{% endif %}</title>
   <meta name="description" content="{{ pageDesc }}">
   {%- if page.url == "/404.html" %}
   <meta name="robots" content="noindex">
@@ -52,9 +52,7 @@
     ]
   } | json | safe }}</script>
   {%- endif %}
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,500;12..96,600;12..96,700;12..96,800&family=IBM+Plex+Mono:wght@500&display=swap">
+  <link rel="preload" href="/assets/fonts/bricolage-grotesque-latin.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="/assets/style.css">
   <script src="/assets/main.js" defer></script>
   {%- if site.cfBeaconToken %}
@@ -64,22 +62,36 @@
 <body>
   <a class="skip-link" href="#contenu">Aller au contenu</a>
   <div class="container{% if narrow %} container--narrow{% endif %}">
-    <header class="site-header{% if backLink %} site-header--back{% endif %}">
-      {%- if backLink %}
-      <a href="/" class="back-link">{% include "icons/back.njk" %}Tous les codes</a>
-      {%- endif %}
+    <header class="site-header">
       <a href="/" class="brand"><span class="brand__mark" aria-hidden="true">%</span><span class="brand__text">{{ site.brand }}</span></a>
-      {%- if not backLink %}
-      <a href="{{ site.authorUrl }}" class="nav-link">À propos</a>
-      {%- endif %}
+      <nav class="site-nav" aria-label="Menu">
+        <button type="button" class="nav-link search-open" aria-haspopup="dialog" aria-keyshortcuts="Control+K Meta+K" hidden>Rechercher <kbd>Ctrl K</kbd></button>
+        <a href="{{ site.authorUrl }}" class="nav-link">À propos{% include "icons/external.njk" %}</a>
+      </nav>
     </header>
 
     {{ content | safe }}
 
     <footer class="site-footer">
       <span>Fait maison, mis à jour depuis git le <time datetime="{{ build.date | isoDate }}">{{ build.date | shortDate }}</time>.</span>
-      <span><a href="{{ site.repo }}">Voir les sources</a> · <a href="{{ site.repo }}/issues/new">Un code ne marche plus ?</a></span>
+      <span><a href="/mentions/">Mentions légales et confidentialité</a> · <a href="/plan-du-site/">Plan du site</a></span>
+      <span><a href="{{ site.repo }}" hreflang="en">Voir les sources (GitHub, en anglais){% include "icons/external.njk" %}</a> · <a href="{{ site.repo }}/issues/new" hreflang="en">Un code ne marche plus ? (GitHub, en anglais){% include "icons/external.njk" %}</a></span>
     </footer>
   </div>
+
+  <dialog class="search" aria-labelledby="search-title">
+    <div class="search__head">
+      <h2 id="search-title">Aller à un service</h2>
+      <button type="button" class="search__close">Fermer</button>
+    </div>
+    <label class="sr-only" for="search-input">Nom ou catégorie</label>
+    <input id="search-input" class="search__input" type="search" autofocus placeholder="Nom ou catégorie" autocomplete="off">
+    <p class="search__count" aria-live="polite"></p>
+    <ul class="search__list">
+      {%- for item in collections.referrals %}
+      <li data-search="{{ item.data.title | lower }} {{ item.data.category | lower }}"><a href="{{ item.url }}">{{ item.data.title }}</a> <span>{{ item.data.category }}</span></li>
+      {%- endfor %}
+    </ul>
+  </dialog>
 </body>
 </html>

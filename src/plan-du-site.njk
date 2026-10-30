@@ -1,0 +1,19 @@
+---
+layout: base.njk
+narrow: true
+metaTitle: "Plan du site"
+metaDesc: "Toutes les pages du site : l'accueil, chaque service et les mentions légales."
+---
+<main id="contenu" class="panel prose page">
+  <h1>Plan du site</h1>
+  <ul>
+    <li><a href="/">Accueil : tous les codes</a>
+      <ul>
+        {%- for item in collections.referrals %}
+        <li><a href="{{ item.url }}">{{ item.data.title }}</a></li>
+        {%- endfor %}
+      </ul>
+    </li>
+    <li><a href="/mentions/">Mentions légales et confidentialité</a></li>
+  </ul>
+</main>

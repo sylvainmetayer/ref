@@ -9,13 +9,16 @@ metaTitle: "Codes et liens de parrainage de Sylvain"
 </section>
 
 {%- if categories.length > 1 %}
-<nav class="filters" aria-label="Filtrer par catégorie" hidden>
+<nav class="filters" aria-label="Filtrer les services" hidden>
+  <label class="sr-only" for="filter-text">Chercher un service</label>
+  <input id="filter-text" class="filters__search" type="search" placeholder="Chercher un service" autocomplete="off">
   <div class="filters__list">
     <button type="button" class="chip" data-filter="" aria-pressed="true">Tous</button>
     {%- for category in categories %}
     <button type="button" class="chip" data-filter="{{ category }}" aria-pressed="false">{{ category }}</button>
     {%- endfor %}
   </div>
+  <p class="filters__count" aria-live="polite"></p>
 </nav>
 {%- endif %}
 
@@ -47,7 +50,7 @@ metaTitle: "Codes et liens de parrainage de Sylvain"
         {% include "copy-button.njk" %}
         {%- elif r.link %}
         <span class="code-box__label">{{ "Lien affilié" if r.kind == "Affiliation" else "Lien de parrainage" }}</span>
-        <a class="btn" href="/go/{{ r.slug }}" rel="sponsored nofollow">Ouvrir<span class="sr-only"> le lien {{ r.title }}</span></a>
+        <a class="btn" href="/go/{{ r.slug }}" rel="sponsored nofollow">Ouvrir<span class="sr-only"> le lien {{ r.title }}</span>{% include "icons/external.njk" %}</a>
         {%- else %}
         <span class="code-box__label">Sur demande</span>
         <a class="btn" href="{{ r.contactUrl }}">Par e-mail</a>
@@ -57,7 +60,7 @@ metaTitle: "Codes et liens de parrainage de Sylvain"
   {%- endfor %}
   </ul>
 
-  <section class="about">
+  <section class="about" id="comment-ca-marche">
     <h2>Comment ça marche</h2>
     <p>Je ne mets ici que des services que j'utilise moi-même. Chaque page donne le code ou le lien, l'avantage pour toi et ce que j'en pense.</p>
     <p>Le parrainage profite en général aux deux : tu reçois l'avantage indiqué, et j'ai souvent une petite prime de mon côté. Les conditions exactes sont celles du service au moment de ton inscription.</p>
