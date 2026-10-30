@@ -4,17 +4,20 @@ link: https://bour.so/p/K5wXJKLYNN7
 code: ''
 category: Banque
 kind: Parrainage
-gain: 150 €
-gainLabel: max. selon l'offre
-advantage: Selon les offres du moment, entre 80 et 150 € offerts pour toute souscription
+gain: ''
+gainLabel: ''
+advantage: Une prime variable selon l'offre en cours, affichée sur la page d'inscription
 tint: ''
 logo: /assets/logos/boursorama.png
 isNew: false
 steps: []
-conditions: []
+conditions:
+  - "Première ouverture d'un compte BoursoBank, à ton nom seul (comptes joints et professionnels exclus)"
+  - "Réservé aux personnes majeures jamais clientes"
+  - "Montant et conditions affichés sur la page de l'offre, ils changent à chaque campagne"
 validUntil: ''
-metaTitle: "Parrainage Boursorama (BoursoBank) : jusqu'à 150 € offerts"
-metaDesc: "Lien de parrainage Boursorama (BoursoBank) : jusqu'à 150 € offerts selon l'offre du moment. Mon avis de client, du compte courant à l'assurance-vie."
+metaTitle: "Parrainage Boursorama (BoursoBank) : prime selon l'offre en cours"
+metaDesc: "Lien de parrainage Boursorama (BoursoBank) : prime variable selon l'offre en cours. Mon avis de client, du compte courant à l'assurance-vie."
 draft: false
 ---
 
