@@ -3,7 +3,7 @@ layout: base.njk
 backLink: true
 narrow: true
 ---
-<main class="detail" style="--tint: {{ tintColor }}">
+<main id="contenu" class="detail" style="--tint: {{ tintColor }}">
   <section class="offer">
     <div class="offer__brand">
       {%- set r = { logo: logo, initial: initial } %}
@@ -22,11 +22,11 @@ narrow: true
       {%- elif link %}
       <a class="btn btn--lg" href="/go/{{ slug }}" rel="sponsored nofollow">S'inscrire avec mon lien</a>
       {%- else %}
-      <a class="btn btn--lg" href="{{ contactUrl }}">Me contacter pour le parrainage</a>
+      <a class="btn btn--lg" href="{{ contactUrl }}">Me demander le parrainage par e-mail</a>
       {%- endif %}
     </div>
     {%- if code and link %}
-    <a class="offer__site" href="/go/{{ slug }}" rel="sponsored nofollow">Aller sur le site de {{ title }} →</a>
+    <a class="offer__site" href="/go/{{ slug }}" rel="sponsored nofollow">Aller sur le site de {{ title }} <span aria-hidden="true">→</span></a>
     {%- endif %}
   </section>
 

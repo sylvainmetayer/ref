@@ -19,7 +19,7 @@ metaTitle: "Codes et liens de parrainage de Sylvain"
 </nav>
 {%- endif %}
 
-<main>
+<main id="contenu">
   <ul class="cards">
   {%- for item in collections.referrals %}
     {%- set r = item.data %}
@@ -30,7 +30,7 @@ metaTitle: "Codes et liens de parrainage de Sylvain"
           <h2><a href="{{ item.url }}">{{ r.title }}</a></h2>
           <div class="meta">
             <span>{% if r.category %}{{ r.category }} · {% endif %}{{ r.kind }}</span>
-            {%- if r.isNew %}<span class="badge">NOUVEAU</span>{% endif %}
+            {%- if r.isNew %}<span class="badge">Nouveau</span>{% endif %}
           </div>
         </div>
         {%- if r.gain %}
@@ -47,10 +47,10 @@ metaTitle: "Codes et liens de parrainage de Sylvain"
         {% include "copy-button.njk" %}
         {%- elif r.link %}
         <span class="code-box__label">{{ "Lien affilié" if r.kind == "Affiliation" else "Lien de parrainage" }}</span>
-        <a class="btn" href="/go/{{ r.slug }}" rel="sponsored nofollow">Ouvrir</a>
+        <a class="btn" href="/go/{{ r.slug }}" rel="sponsored nofollow">Ouvrir<span class="sr-only"> le lien {{ r.title }}</span></a>
         {%- else %}
         <span class="code-box__label">Sur demande</span>
-        <a class="btn" href="{{ r.contactUrl }}">Me contacter</a>
+        <a class="btn" href="{{ r.contactUrl }}">Par e-mail</a>
         {%- endif %}
       </div>
     </li>
