@@ -4,6 +4,7 @@ const longDate = new Intl.DateTimeFormat("fr-FR", { day: "numeric", month: "long
 export default function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("src/assets");
   eleventyConfig.addPassthroughCopy("src/admin");
+  eleventyConfig.addPassthroughCopy({ "src/_headers": "_headers", "src/favicon.svg": "favicon.svg" });
 
   // Services publiés (draft: true exclus), triés par nom
   eleventyConfig.addCollection("referrals", (api) =>
@@ -14,6 +15,7 @@ export default function (eleventyConfig) {
   );
 
   eleventyConfig.addFilter("shortDate", (date) => shortDate.format(new Date(date)));
+  eleventyConfig.addFilter("isoDate", (date) => new Date(date).toISOString().slice(0, 10));
   eleventyConfig.addFilter("longDate", (date) => longDate.format(new Date(date)));
 
   // Catégories distinctes d'une liste de services, triées
