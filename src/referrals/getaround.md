@@ -5,13 +5,15 @@ code: ""
 category: "Mobilité"
 kind: "Parrainage"
 gain: "15 €"
-gainLabel: "1re location"
-advantage: "15 € de réduction sur la première location"
+gainLabel: "de crédit location"
+advantage: "15 € de crédit location à l'inscription"
 tint: ""
 logo: "/assets/logos/getaround.png"
 isNew: false
+conditions:
+  - "Nouveaux membres Getaround uniquement"
 metaTitle: ""
-metaDesc: "Lien de parrainage Getaround : 15 € de réduction sur ta première location de voiture entre particuliers. Mon avis de locataire sans voiture."
+metaDesc: "Lien de parrainage Getaround : 15 € de crédit location à l'inscription. Mon avis de locataire sans voiture."
 draft: false
 ---
 
@@ -21,4 +23,4 @@ Getaround permet de louer la voiture d'un particulier près de chez toi. Je n'ai
 
 Beaucoup de voitures s'ouvrent directement depuis l'appli, sans rendez-vous pour se passer les clés. C'est ce qui me la fait choisir plutôt qu'une agence de location.
 
-Avec mon lien, tu as 15 € de réduction sur ta première location.
+Avec mon lien, tu as 15 € de crédit location dès ton inscription.

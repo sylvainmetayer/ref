@@ -10,6 +10,10 @@ advantage: "Selon les offres du moment, entre 30 et 130 € offerts pour toute s
 tint: ""
 logo: "/assets/logos/fortuneo.png"
 isNew: false
+conditions:
+  - "Saisir le code parrain à l'ouverture"
+  - "Montant selon le produit : de 70 à 130 € pour un compte avec carte, avec 300 € versés dans les 6 jours"
+  - "Conditions détaillées sur fortuneo.fr/parrainage, elles changent à chaque campagne"
 metaTitle: "Code parrainage Fortuneo : jusqu'à 130 € offerts"
 metaDesc: "Code parrain Fortuneo 13061272 : jusqu'à 130 € offerts selon l'offre en cours. Mon avis de client sur le compte courant et la carte en voyage."
 draft: false
