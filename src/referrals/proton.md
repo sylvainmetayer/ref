@@ -20,6 +20,6 @@ draft: false
 
 ## Mon avis sur Proton
 
-Proton est une entreprise suisse qui fait Proton Mail, Proton Pass, Proton VPN et Proton Drive. Elle a racheté SimpleLogin en 2022, et c'est ce que j'utilise : une adresse alias différente pour chaque site où je m'inscris.
+Proton est une entreprise suisse qui fait Proton Mail, Proton Pass, Proton <abbr title="réseau privé virtuel">VPN</abbr> et Proton Drive. Elle a racheté SimpleLogin en 2022, et c'est ce que j'utilise : une adresse alias différente pour chaque site où je m'inscris.
 
 Avec mon lien, tu as 20 $ de crédit et 2 semaines d'essai quand tu prends une formule payante sur un nouveau compte Proton.
