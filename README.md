@@ -6,7 +6,7 @@ Liens et codes de parrainage, site statique [Eleventy](https://www.11ty.dev/) é
 
 ```bash
 mise run dev      # http://localhost:8080, rechargement auto (sans les Functions : /go/ en 404)
-mise run preview  # http://localhost:8788, émulateur Cloudflare Pages (Functions /go/ et /api/event)
+mise run preview  # http://localhost:8788, émulateur Cloudflare Pages (Function /go/)
 mise run build    # génère _site/
 mise tasks        # liste des tâches
 ```
@@ -43,7 +43,7 @@ Le nom du fichier donne les URLs :
 | URL | Rôle |
 | --- | --- |
 | `/<slug>/` | Page du service (SEO, partage) |
-| `/go/<slug>` | Redirection 302 vers le lien de parrainage (Pages Function, compte le clic) |
+| `/go/<slug>` | Redirection 302 vers le lien de parrainage (Pages Function) |
 
 `metaTitle` / `metaDesc` peuvent être ajoutés dans le frontmatter pour surcharger les valeurs générées.
 
@@ -55,37 +55,12 @@ Connexion par token : créer un [fine-grained PAT GitHub](https://github.com/set
 
 ## Analytics
 
-Sans cookie ni identifiant. Deux sources :
-
-- **Pages vues** : Cloudflare Web Analytics, à activer dans le projet Pages (*Metrics → Web Analytics*), le script est injecté automatiquement.
-- **Événements** : [Workers Analytics Engine](https://developers.cloudflare.com/analytics/analytics-engine/), dataset `ref_events` (binding `EVENTS` dans `wrangler.toml`, créé à la première écriture).
-
-| Événement | Déclencheur | Source |
-| --- | --- | --- |
-| `go` | Clic sur un lien de parrainage, ou lien `/go/<slug>` partagé | Pages Function `functions/go/[[path]].js` (côté serveur, insensible aux bloqueurs) |
-| `copy` | Bouton « Copier » | `assets/main.js` → `POST /api/event` |
-| `filter` | Filtre de catégorie sur l'accueil | idem |
-| `other` | Carte « D'autres bonus » | idem |
-
-Colonnes : `blob1` événement, `blob2` service, `blob3` page d'origine (`direct` si lien partagé), `blob4` filtre actif, `blob5` domaine référent externe (mémorisé pour la session), `blob6` pays, `blob7` appareil (`mobile`/`desktop`).
-
-```bash
-export CF_ACCOUNT_ID=… CF_API_TOKEN=…   # token avec la permission Account Analytics: Read
-mise run stats                          # totaux par service et événement sur 30 jours
-```
-
-Exemple : d'où viennent les clics sortants ?
-
-```sql
-SELECT blob3 AS page, blob5 AS referent, SUM(_sample_interval) AS clics
-FROM ref_events WHERE blob1 = 'go' AND timestamp > NOW() - INTERVAL '30' DAY
-GROUP BY page, referent ORDER BY clics DESC
-```
+Pages vues uniquement, sans cookie ni identifiant : Cloudflare Web Analytics, beacon inclus par `base.njk` avec le jeton `cfBeaconToken` de `src/_data/site.json`.
 
 ## Déploiement (Cloudflare Pages)
 
 - Build command : `npm run build`
-- Output directory : `_site` (lu aussi depuis `wrangler.toml`, avec le binding Analytics Engine)
+- Output directory : `_site` (lu aussi depuis `wrangler.toml`)
 - Functions : dossier `functions/` détecté automatiquement
 - Version de Node : lue depuis `.node-version`
 - Domaine personnalisé : `ref.sylvain.dev`
