@@ -9,7 +9,7 @@ gainLabel: "offerts"
 advantage: "20 € offerts sur ton contrat de gaz ou d'électricité"
 tint: ""
 logo: "/assets/logos/gaz-de-bordeaux.png"
-isNew: true
+date: 2026-10-15
 steps:
   - "Écris-moi pour obtenir ma référence client."
   - "Souscris une offre de marché en ligne ou par téléphone, et indique la référence à l'étape 3 du parcours."

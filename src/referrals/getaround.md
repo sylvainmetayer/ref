@@ -9,7 +9,6 @@ gainLabel: "de crédit location"
 advantage: "15 € de crédit location à l'inscription"
 tint: ""
 logo: "/assets/logos/getaround.png"
-isNew: false
 conditions:
   - "Nouveaux membres Getaround uniquement"
 metaTitle: ""

@@ -9,7 +9,6 @@ gainLabel: "1re commande"
 advantage: "10 € de réduction sur ta première commande"
 tint: ""
 logo: "/assets/logos/uber-eats.png"
-isNew: false
 conditions:
   - "25 € de commande minimum"
 metaTitle: ""

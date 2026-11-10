@@ -9,7 +9,7 @@ gainLabel: "de crédit"
 advantage: "Du crédit offert à l'inscription"
 tint: ""
 logo: "/assets/logos/pikapods.png"
-isNew: true
+date: 2026-10-15
 steps: []
 conditions:
   - "Programme à confirmer dans mon espace PikaPods : montant et conditions à venir"

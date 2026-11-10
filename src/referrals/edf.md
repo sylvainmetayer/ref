@@ -9,7 +9,6 @@ gainLabel: "sur ta facture"
 advantage: "40 € sur ta facture d'électricité"
 tint: ""
 logo: "/assets/logos/edf.png"
-isNew: false
 steps:
   - "Écris-moi pour obtenir le nom et l'adresse e-mail de mon contrat EDF."
   - "Appelle le 3404 (du lundi au samedi, de 8 h à 20 h) et souscris une offre de marché d'électricité."

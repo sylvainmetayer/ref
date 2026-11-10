@@ -50,7 +50,7 @@ collections:
           - { label: Orange, value: "#FED7AA" }
           - { label: Cyan, value: "#A5F3FC" }
       - { label: Logo, name: logo, widget: image, required: false }
-      - { label: Nouveau, name: isNew, widget: boolean, default: false, required: false }
+      - { label: Ajoutée le, name: date, widget: datetime, time_format: false, format: "YYYY-MM-DD", default: "{{now}}", required: false, hint: "Badge « Nouveau » pendant 60 jours après cette date. Vide = pas de badge" }
       - { label: Étapes, name: steps, widget: list, required: false, hint: "Vide = étapes génériques" }
       - { label: Bon à savoir, name: conditions, widget: list, required: false, hint: "Ex. Nouveaux clients uniquement" }
       - { label: Valable jusqu'au, name: validUntil, widget: datetime, time_format: false, format: "YYYY-MM-DD", required: false }

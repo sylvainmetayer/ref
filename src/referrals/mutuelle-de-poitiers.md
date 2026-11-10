@@ -9,7 +9,7 @@ gainLabel: ""
 advantage: "Une prime de parrainage selon le règlement de l'année en cours"
 tint: ""
 logo: "/assets/logos/mutuelle-de-poitiers.png"
-isNew: true
+date: 2026-10-15
 steps:
   - "Écris-moi pour obtenir mes coordonnées de sociétaire."
   - "Souscris un contrat habitation, auto ou santé auprès d'une agence Mutuelle de Poitiers en me citant comme parrain."

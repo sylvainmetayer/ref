@@ -9,7 +9,6 @@ gainLabel: "à l'ouverture"
 advantage: "50 € à l'ouverture d'une Formule de compte"
 tint: ""
 logo: "/assets/logos/la-banque-postale.png"
-isNew: false
 conditions:
   - "Formule de compte, hors Formule Simplicité"
   - "Prime versée sous 3 mois"

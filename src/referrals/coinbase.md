@@ -9,7 +9,7 @@ gainLabel: "en bitcoin"
 advantage: "15 € en bitcoin après ton premier achat"
 tint: ""
 logo: "/assets/logos/coinbase.png"
-isNew: true
+date: 2026-10-15
 steps:
   - "Ouvre mon lien de parrainage (à venir) et crée ton compte Coinbase."
   - "Vérifie ton identité et fais un premier achat éligible."

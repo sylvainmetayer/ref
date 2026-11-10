@@ -9,7 +9,7 @@ gainLabel: "offert"
 advantage: "Un mois de gazette offert à l'inscription"
 tint: ""
 logo: "/assets/logos/famileo.png"
-isNew: true
+date: 2026-10-15
 steps:
   - "Copie le code ci-dessus."
   - "Crée la gazette de ta famille sur Famileo et saisis le code à l'inscription."

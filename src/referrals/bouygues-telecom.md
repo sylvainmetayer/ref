@@ -9,7 +9,7 @@ gainLabel: "offerts"
 advantage: "30 € offerts sur ta souscription Bbox ou forfait mobile"
 tint: ""
 logo: "/assets/logos/bouygues-telecom.png"
-isNew: true
+date: 2026-10-15
 steps:
   - "Écris-moi pour obtenir mon code de parrainage."
   - "Souscris une Bbox ou un forfait mobile éligible en indiquant le code parrain."

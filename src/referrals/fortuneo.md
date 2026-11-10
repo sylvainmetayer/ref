@@ -9,7 +9,6 @@ gainLabel: "max. selon l'offre"
 advantage: "Selon les offres du moment, entre 30 et 130 € offerts pour toute souscription"
 tint: ""
 logo: "/assets/logos/fortuneo.png"
-isNew: false
 conditions:
   - "Saisir le code parrain à l'ouverture"
   - "Montant selon le produit : de 70 à 130 € pour un compte avec carte, avec 300 € versés dans les 6 jours"
