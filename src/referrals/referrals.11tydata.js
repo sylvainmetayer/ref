@@ -14,6 +14,8 @@ export default {
     // Parrainage sans lien ni code (ex. EDF, par téléphone) : on passe par moi
     contactUrl: (data) =>
       data.link || data.code ? "" : `mailto:${data.site.email}?subject=${encodeURIComponent(`Parrainage ${data.title}`)}`,
+    // shortcut: état figé au build (une offre expire en ligne seulement au build suivant), passer à un build planifié (cron) si les dates se multiplient
+    expired: (data) => Boolean(data.validUntil) && new Date(data.validUntil).toISOString().slice(0, 10) < data.build.date.toISOString().slice(0, 10),
     initial: (data) => data.title.charAt(0).toUpperCase(),
     heading: (data) => {
       const label = data.kind === "Promo" ? "Code promo" : data.kind === "Affiliation" ? "Lien affilié" : data.code ? "Code parrainage" : "Parrainage";
