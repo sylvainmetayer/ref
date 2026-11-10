@@ -10,7 +10,7 @@ narrow: true
       {% include "logo.njk" %}
       <div>
         <div class="offer__name">{{ title }}</div>
-        <div class="offer__meta">{% if category %}{{ category }} · {% endif %}{{ kind }}</div>
+        <div class="offer__meta">{% if category %}{{ category }} · {% endif %}{{ kind }}{% if expired %} <span class="badge">Offre expirée</span>{% endif %}</div>
       </div>
     </div>
     <h1>{{ heading }}</h1>
@@ -48,7 +48,7 @@ narrow: true
         <li class="checklist__ok">{% include "icons/check.njk" %}{{ condition }}</li>
         {%- endfor %}
         {%- if validUntil %}
-        <li class="checklist__date">{% include "icons/clock.njk" %}Valable jusqu'au {{ validUntil | longDate }}</li>
+        <li class="checklist__date">{% include "icons/clock.njk" %}{% if expired %}Offre expirée le {{ validUntil | longDate }}{% else %}Valable jusqu'au {{ validUntil | longDate }}{% endif %}</li>
         {%- endif %}
       </ul>
     </section>
@@ -69,7 +69,8 @@ narrow: true
       <a class="other" href="{{ item.url }}" style="--tint: {{ r.tintColor }}">
         {% include "logo.njk" %}
         <span class="other__name">{{ r.title }}</span>
-        {%- if r.gain %}<span class="other__gain">{{ r.gain }}</span>{% endif %}
+        {%- if r.expired %}<span><span class="badge">Offre expirée</span></span>
+        {%- elif r.gain %}<span class="other__gain">{{ r.gain }}</span>{% endif %}
       </a>
       {%- endfor %}
     </div>
