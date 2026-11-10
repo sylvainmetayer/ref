@@ -9,7 +9,6 @@ gainLabel: "1er événement"
 advantage: "5 € de réduction sur ton premier événement"
 tint: ""
 logo: "/assets/logos/fever.png"
-isNew: false
 metaTitle: ""
 metaDesc: "Code parrainage Fever : 5 € de réduction sur ton premier événement. Mon avis : je m'en sers pour trouver des idées de sorties et offrir des billets."
 draft: false

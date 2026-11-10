@@ -9,7 +9,6 @@ gainLabel: "en carte cadeau"
 advantage: "50 € en carte cadeau à la souscription d'une assurance-vie ou d'un PER"
 tint: ""
 logo: "/assets/logos/linxea.png"
-isNew: false
 conditions:
   - "Assurance-vie ou plan d'épargne retraite (PER)"
   - "Nouveau client Linxea"

@@ -9,7 +9,6 @@ gainLabel: "d'essai gratuit"
 advantage: "1 semaine pour essayer Claude Code gratuitement"
 tint: ""
 logo: "/assets/logos/claude-code.png"
-isNew: false
 conditions:
   - "Jamais eu d'abonnement Claude payant"
   - "Carte bancaire demandée : sans résiliation, l'essai devient un abonnement Pro payant"

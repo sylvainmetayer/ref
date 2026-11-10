@@ -9,7 +9,6 @@ gainLabel: "de cadeau"
 advantage: "Un cadeau d'une valeur de 20 € sur ta première commande en ligne"
 tint: ""
 logo: "/assets/logos/yves-rocher.png"
-isNew: false
 conditions:
   - "Première commande sur yves-rocher.fr"
 metaTitle: ""

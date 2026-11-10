@@ -9,7 +9,7 @@ gainLabel: sur 3 commandes
 advantage: 18 € de réduction sur tes 3 premières commandes
 tint: ''
 logo: /assets/logos/potager-city.png
-isNew: false
+date: 2026-10-14
 steps: []
 conditions:
   - "1re commande : 10 € dès 20 € d'achat"

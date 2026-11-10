@@ -9,7 +9,7 @@ gainLabel: ""
 advantage: "Une prime variable selon la campagne en cours, affichée dans l'app au moment de l'inscription"
 tint: ""
 logo: "/assets/logos/revolut.png"
-isNew: true
+date: 2026-10-15
 steps:
   - "Ouvre mon lien de parrainage depuis ton téléphone."
   - "Crée ton compte Revolut et commande ta carte."

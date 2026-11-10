@@ -9,7 +9,6 @@ gainLabel: ''
 advantage: Une prime variable selon l'offre en cours, affichée sur la page d'inscription
 tint: ''
 logo: /assets/logos/boursorama.png
-isNew: false
 steps: []
 conditions:
   - "Première ouverture d'un compte BoursoBank, à ton nom seul (comptes joints et professionnels exclus)"

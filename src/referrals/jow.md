@@ -9,7 +9,6 @@ gainLabel: "sur 2 commandes"
 advantage: "15 € de réduction sur tes deux premières commandes (10 € puis 5 €)"
 tint: ""
 logo: "/assets/logos/jow.png"
-isNew: false
 conditions:
   - "50 € de commande minimum"
   - "Avec des recettes dans le panier"

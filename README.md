@@ -29,7 +29,7 @@ gainLabel: "de crédit"                   # précision sous le gain
 advantage: "20 € de crédit offerts…"     # phrase complète, description SEO
 tint: ""                                 # couleur de fond, vide = automatique
 logo: ""                                 # /assets/logos/… (sinon initiale)
-isNew: false                             # badge NOUVEAU
+date: 2026-10-15                         # date d'ajout : badge Nouveau 60 jours (vide = jamais)
 steps: []                                # étapes, vide = génériques
 conditions: []                           # « Bon à savoir »
 validUntil: 2026-12-31                   # optionnel
