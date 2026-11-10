@@ -2,5 +2,14 @@
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
     "config:recommended"
+  ],
+  "customManagers": [
+    {
+      "customType": "regex",
+      "description": "Sveltia CMS chargé depuis unpkg : l'attribut integrity est à recalculer à la main (cf. src/admin/index.html)",
+      "managerFilePatterns": ["/^src/admin/index\\.html$/"],
+      "matchStrings": ["https://unpkg\\.com/(?<depName>@sveltia/cms)@(?<currentValue>\\d+\\.\\d+\\.\\d+)/"],
+      "datasourceTemplate": "npm"
+    }
   ]
 }
