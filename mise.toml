@@ -25,17 +25,3 @@ run = "npx -y wrangler@4 pages dev _site --port 8788"
 [tasks.clean]
 description = "Supprime _site/"
 run = "rm -rf _site"
-
-[tasks.stats]
-description = "Clics par service et par événement sur 30 jours (Analytics Engine)"
-run = '''
-: "${CF_ACCOUNT_ID:?CF_ACCOUNT_ID manquant}" "${CF_API_TOKEN:?CF_API_TOKEN manquant (permission Account Analytics: Read)}"
-curl -s "https://api.cloudflare.com/client/v4/accounts/$CF_ACCOUNT_ID/analytics_engine/sql" \
-  -H "Authorization: Bearer $CF_API_TOKEN" \
-  --data "SELECT blob2 AS service, blob1 AS event, SUM(_sample_interval) AS total
-          FROM ref_events
-          WHERE timestamp > NOW() - INTERVAL '30' DAY
-          GROUP BY service, event
-          ORDER BY total DESC
-          FORMAT PrettyCompact"
-'''
