@@ -1,5 +1,6 @@
-import { readFile, writeFile } from "node:fs/promises";
+import { mkdir, readFile, writeFile } from "node:fs/promises";
 import { transform } from "esbuild";
+import { png } from "./scripts/og/image.js";
 
 const shortDate = new Intl.DateTimeFormat("fr-FR", { day: "numeric", month: "short", year: "numeric" });
 const longDate = new Intl.DateTimeFormat("fr-FR", { day: "numeric", month: "long", year: "numeric" });
@@ -22,12 +23,23 @@ export default function (eleventyConfig) {
   });
 
   // Services publiés (draft: true exclus), triés par nom
-  eleventyConfig.addCollection("referrals", (api) =>
-    api
+  let referrals = [];
+  eleventyConfig.addCollection("referrals", (api) => {
+    referrals = api
       .getFilteredByGlob("src/referrals/*.md")
       .filter((item) => !item.data.draft)
-      .sort((a, b) => a.data.title.localeCompare(b.data.title, "fr"))
-  );
+      .sort((a, b) => a.data.title.localeCompare(b.data.title, "fr"));
+    return referrals;
+  });
+
+  // Image de partage de chaque fiche : /assets/og/<slug>.png (cf. og:image dans base.njk)
+  eleventyConfig.on("eleventy.after", async ({ dir }) => {
+    await mkdir(`${dir.output}/assets/og`, { recursive: true });
+    for (const { data } of referrals) {
+      const { heading, slug, logo, tintColor: tint } = data;
+      await writeFile(`${dir.output}/assets/og/${slug}.png`, png({ heading, slug, logo, tint, host: new URL(data.site.url).host }));
+    }
+  });
 
   eleventyConfig.addFilter("shortDate", (date) => shortDate.format(new Date(date)));
   eleventyConfig.addFilter("isoDate", (date) => new Date(date).toISOString().slice(0, 10));
