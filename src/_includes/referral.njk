@@ -59,6 +59,19 @@ narrow: true
   <section class="panel prose">{{ content | safe }}</section>
   {%- endif %}
 
+  {%- if faq.length %}
+  <section class="panel faq">
+    <h2>Questions fréquentes sur {{ "l'affiliation" if kind == "Affiliation" else "le parrainage" }} {{ title }}</h2>
+    {%- for item in faq %}
+    <h3>{{ item.q }}</h3>
+    <p>{{ item.a }}</p>
+    {%- endfor %}
+  </section>
+  {%- endif %}
+  {%- if sources.length %}
+  <p class="sources">Conditions relevées{% if verifiedOn %} le {{ verifiedOn | longDate }}{% endif %} sur : {% for source in sources %}<a href="{{ source.url }}" rel="external">{{ source.label }}</a>{% if not loop.last %}, {% endif %}{% endfor %}. Elles peuvent changer, la page du service fait foi.</p>
+  {%- endif %}
+
   {%- set others = collections.referrals | related(page.url, category) %}
   {%- if others.length %}
   <section>

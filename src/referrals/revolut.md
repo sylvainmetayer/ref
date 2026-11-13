@@ -20,6 +20,19 @@ conditions:
 validUntil: ""
 metaTitle: "Parrainage Revolut : prime selon la campagne en cours"
 metaDesc: "Lien de parrainage Revolut : prime variable selon la campagne en cours, affichée dans l'app. Mon avis après plusieurs années d'usage en voyage."
+faq:
+  - q: "Quel est le montant de la prime de parrainage Revolut ?"
+    a: "Les conditions de parrainage de Revolut ne donnent aucun montant. La récompense et les étapes à suivre sont indiquées dans l'invitation, et elles changent selon la campagne."
+  - q: "Qui peut être parrainé chez Revolut ?"
+    a: "Une personne qui n'a pas déjà de compte Revolut Personnel, qui peut en ouvrir un dans sa région et qui passe par un lien de parrainage."
+  - q: "Que doit faire le filleul ?"
+    a: "Ouvrir un compte Revolut Personnel avec le lien de parrainage, puis suivre les étapes de l'invitation dans les délais qu'elle indique."
+  - q: "La récompense peut-elle être annulée ?"
+    a: "Oui, si une étape est défaite : par exemple un compte fermé dans les 14 jours ou un achat remboursé."
+sources:
+  - label: "Conditions de parrainage Revolut (France, version 2.0.2)"
+    url: "https://cdn.revolut.com/terms_and_conditions/pdf/conditions_de_parrainage_6c05048d_2.0.2_1784303326_fr.pdf"
+verifiedOn: 2026-11-13
 draft: false
 ---
 

@@ -20,6 +20,17 @@ conditions:
 validUntil: ""
 metaTitle: "Code parrainage Famileo : 1 mois de gazette offert"
 metaDesc: "Code parrainage Famileo : un mois de gazette offert à l'inscription. Mon avis après deux gazettes ouvertes pour des proches."
+faq:
+  - q: "Que donne le code parrain Famileo ?"
+    a: "Un mois d'abonnement gratuit pour le filleul, une fois le parrainage validé par Famileo."
+  - q: "Où saisir le code parrain Famileo ?"
+    a: "Au moment de la souscription, dans le champ prévu pour le code parrain."
+  - q: "Qui peut utiliser un code parrain Famileo ?"
+    a: "Toute personne qui n'a jamais été gestionnaire d'un abonnement Famileo. Quelqu'un qui utilise déjà Famileo et ouvre un abonnement supplémentaire peut aussi en profiter. Un seul parrainage est possible par souscription."
+sources:
+  - label: "Conditions générales Famileo, annexe 1 Parrainage (9 septembre 2026)"
+    url: "https://www.famileo.com/fr/cgv"
+verifiedOn: 2026-11-13
 draft: false
 ---
 

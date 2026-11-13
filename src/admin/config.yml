@@ -53,6 +53,22 @@ collections:
       - { label: Ajoutée le, name: date, widget: datetime, time_format: false, format: "YYYY-MM-DD", default: "{{now}}", required: false, hint: "Badge « Nouveau » pendant 60 jours après cette date. Vide = pas de badge" }
       - { label: Étapes, name: steps, widget: list, required: false, hint: "Vide = étapes génériques" }
       - { label: Bon à savoir, name: conditions, widget: list, required: false, hint: "Ex. Nouveaux clients uniquement" }
+      - label: Questions fréquentes
+        name: faq
+        widget: list
+        required: false
+        hint: "Chaque réponse doit venir d'une source officielle listée dessous"
+        fields:
+          - { label: Question, name: q, widget: string }
+          - { label: Réponse, name: a, widget: text }
+      - label: Sources officielles
+        name: sources
+        widget: list
+        required: false
+        fields:
+          - { label: Intitulé, name: label, widget: string }
+          - { label: Adresse, name: url, widget: string, pattern: ["^https?://", "Doit commencer par http(s)://"] }
+      - { label: Conditions relevées le, name: verifiedOn, widget: datetime, time_format: false, format: "YYYY-MM-DD", required: false }
       - { label: Valable jusqu'au, name: validUntil, widget: datetime, time_format: false, format: "YYYY-MM-DD", required: false }
       - { label: Titre Google, name: metaTitle, widget: string, required: false, hint: "Vide = « Code/Lien de parrainage X : gain ». Viser 60 caractères max." }
       - { label: Description Google, name: metaDesc, widget: text, required: false, hint: "Vide = générée. Viser 150 caractères environ." }
