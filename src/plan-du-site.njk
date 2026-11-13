@@ -14,6 +14,9 @@ metaDesc: "Toutes les pages du site : l'accueil, chaque service et les mentions 
         {%- endfor %}
       </ul>
     </li>
+    {%- for cat in collections.categoryPages %}
+    <li><a href="{{ cat.url }}">Parrainages {{ cat.name | lower }}</a></li>
+    {%- endfor %}
     <li><a href="/mentions/">Mentions légales et confidentialité</a></li>
   </ul>
 </main>

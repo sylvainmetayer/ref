@@ -2,7 +2,7 @@
 title: "Linxea"
 link: "https://linxea.mention-me.com/m/ol/zj9kcdnc-sylvain-metayer"
 code: ""
-category: "Épargne"
+category: "Banque et épargne"
 kind: "Parrainage"
 gain: "50 €"
 gainLabel: "en carte cadeau"

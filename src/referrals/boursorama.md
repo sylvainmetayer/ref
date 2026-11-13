@@ -2,7 +2,7 @@
 title: Boursorama
 link: https://bour.so/p/K5wXJKLYNN7
 code: ''
-category: Banque
+category: "Banque et épargne"
 kind: Parrainage
 gain: ''
 gainLabel: ''

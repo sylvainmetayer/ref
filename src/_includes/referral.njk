@@ -2,7 +2,7 @@
 layout: base.njk
 narrow: true
 ---
-<nav class="crumbs" aria-label="Fil d'Ariane"><a href="/">{% include "icons/back.njk" %}Tous les codes</a> <span aria-hidden="true">/</span> <span aria-current="page">{{ title }}</span></nav>
+<nav class="crumbs" aria-label="Fil d'Ariane"><a href="/">{% include "icons/back.njk" %}Tous les codes</a> <span aria-hidden="true">/</span> {% set catUrl = category | categoryUrl %}{% if catUrl %}<a href="{{ catUrl }}">{{ category }}</a> <span aria-hidden="true">/</span> {% endif %}<span aria-current="page">{{ title }}</span></nav>
 <main id="contenu" class="detail" style="--tint: {{ tintColor }}">
   <section class="offer">
     <div class="offer__brand">

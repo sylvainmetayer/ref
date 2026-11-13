@@ -2,7 +2,7 @@
 title: "Hetzner"
 link: "https://hetzner.cloud/?ref=TFczZp0mGQ5Z"
 code: ""
-category: "Cloud"
+category: "Cloud et tech"
 kind: "Parrainage"
 gain: "20 €"
 gainLabel: "de crédit"

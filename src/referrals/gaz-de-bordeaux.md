@@ -2,7 +2,7 @@
 title: "Gaz de Bordeaux"
 link: ""
 code: ""
-category: "Énergie"
+category: "Maison et quotidien"
 kind: "Parrainage"
 gain: "20 €"
 gainLabel: "offerts"

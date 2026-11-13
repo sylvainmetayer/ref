@@ -2,7 +2,7 @@
 title: "Jow"
 link: ""
 code: ""
-category: "Courses"
+category: "Maison et quotidien"
 kind: "Parrainage"
 gain: "15 €"
 gainLabel: "sur 2 commandes"

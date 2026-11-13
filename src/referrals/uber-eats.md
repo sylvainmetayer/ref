@@ -2,7 +2,7 @@
 title: "Uber Eats"
 link: ""
 code: ""
-category: "Repas"
+category: "Maison et quotidien"
 kind: "Parrainage"
 gain: "10 €"
 gainLabel: "1re commande"

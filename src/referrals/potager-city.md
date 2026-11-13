@@ -2,7 +2,7 @@
 title: Potager City
 link: https://www.potagercity.fr/parrainage?code=AC-IIINTDYD
 code: AC-IIINTDYD
-category: Courses
+category: "Maison et quotidien"
 kind: Parrainage
 gain: 18 €
 gainLabel: sur 3 commandes

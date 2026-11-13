@@ -2,7 +2,7 @@
 title: "Bouygues Telecom"
 link: ""
 code: ""
-category: "Internet"
+category: "Maison et quotidien"
 kind: "Parrainage"
 gain: "30 €"
 gainLabel: "offerts"

@@ -22,7 +22,7 @@ Un fichier par service dans `src/referrals/<slug>.md` :
 title: "Hetzner"                         # nom du service
 link: "https://hetzner.cloud/?ref=…"     # lien de parrainage (cible de /go/<slug>)
 code: ""                                 # code à copier (optionnel)
-category: "Cloud"                        # filtres de l'accueil
+category: "Cloud et tech"                # filtres de l'accueil, page catégorie
 kind: "Parrainage"                       # Parrainage | Promo
 gain: "20 €"                             # mis en avant, court
 gainLabel: "de crédit"                   # précision sous le gain
@@ -43,6 +43,7 @@ Le nom du fichier donne les URLs :
 | URL | Rôle |
 | --- | --- |
 | `/<slug>/` | Page du service (SEO, partage) |
+| `/parrainage-<catégorie>/` | Page d'une catégorie, générée dès 3 fiches publiées |
 | `/go/<slug>` | Redirection 302 vers le lien de parrainage (Pages Function) |
 
 `metaTitle` / `metaDesc` peuvent être ajoutés dans le frontmatter pour surcharger les valeurs générées.

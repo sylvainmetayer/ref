@@ -2,7 +2,7 @@
 title: "Coinbase"
 link: ""
 code: ""
-category: "Crypto"
+category: "Banque et épargne"
 kind: "Parrainage"
 gain: "15 €"
 gainLabel: "en bitcoin"

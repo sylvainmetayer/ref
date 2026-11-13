@@ -2,7 +2,7 @@
 title: "Getaround"
 link: "https://fr.getaround.com/r/2158064-543"
 code: ""
-category: "Mobilité"
+category: "Loisirs et mobilité"
 kind: "Parrainage"
 gain: "15 €"
 gainLabel: "de crédit location"
