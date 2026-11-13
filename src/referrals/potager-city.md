@@ -18,6 +18,10 @@ conditions:
 validUntil: ''
 metaTitle: ''
 metaDesc: "Lien de parrainage Potager City : 18 € de réduction sur tes 3 premières commandes. Mon avis sur les paniers de fruits et légumes de saison."
+sources:
+  - label: "Page parrainage de Potager City"
+    url: "https://www.potagercity.fr/parrainage"
+verifiedOn: 2026-11-13
 draft: false
 ---
 

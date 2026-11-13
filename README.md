@@ -33,6 +33,9 @@ date: 2026-10-15                         # date d'ajout : badge Nouveau 60 jours
 steps: []                                # étapes, vide = génériques
 conditions: []                           # « Bon à savoir »
 validUntil: 2026-12-31                   # optionnel
+faq: []                                  # questions fréquentes : { q, a }, réponses sourcées
+sources: []                              # sources officielles : { label, url }
+verifiedOn: 2026-11-13                   # date du relevé des conditions
 draft: false                             # true = non publié
 ---
 Texte libre de la page (SEO), optionnel.

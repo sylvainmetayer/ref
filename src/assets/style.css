@@ -184,6 +184,10 @@ kbd { padding: 1px 6px; border: 1px solid var(--line); border-radius: 6px; font-
 .panel { background: var(--surface); border-radius: 20px; padding: 22px; box-shadow: 0 0 0 1px var(--card-line); }
 .panel h2, .section-title { margin: 0 0 14px; font-size: 20px; font-weight: 800; letter-spacing: -0.02em; }
 .section-title { margin-top: 12px; }
+.faq h3 { margin: 18px 0 4px; font-size: 16px; font-weight: 700; }
+.faq h2 + h3 { margin-top: 0; }
+.faq p { margin: 0; font-size: 15px; color: var(--ink-soft); }
+.sources { margin: 0; font-size: 14px; color: var(--muted); }
 .steps, .checklist { margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; }
 .steps { gap: 14px; }
 .steps li { display: flex; gap: 12px; align-items: flex-start; }

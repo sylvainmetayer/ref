@@ -11,6 +11,15 @@ tint: ""
 logo: "/assets/logos/hetzner.png"
 metaTitle: ""
 metaDesc: "Lien de parrainage Hetzner : 20 € de crédit offerts à l'inscription. Mon avis d'utilisateur, avec un VPS, un serveur et une Storage Box pour mon homelab."
+faq:
+  - q: "Peut-on cumuler le parrainage Hetzner avec un code promo ?"
+    a: "Non. Tu peux utiliser soit un code de parrainage, soit un code promo cloud, pas les deux."
+  - q: "Comment le crédit Hetzner est-il utilisé ?"
+    a: "Il est déduit automatiquement de tes prochaines factures."
+sources:
+  - label: "Documentation Hetzner : codes promo et crédits"
+    url: "https://docs.hetzner.com/general/billing-and-account-management/billing-at-hetzner/promo-code"
+verifiedOn: 2026-11-13
 draft: false
 ---
 
