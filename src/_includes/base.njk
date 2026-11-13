@@ -10,7 +10,7 @@
   {%- else %}
   {%- set pageDesc = metaDesc or site.description %}
   {%- endif %}
-  <title>{{ pageTitle }}{% if page.url != "/" %} · {{ site.author.split(" ")[0] }}{% endif %}</title>
+  <title>{{ pageTitle }}{% if page.url != "/" and pageTitle.length <= 50 %} · {{ site.author.split(" ")[0] }}{% endif %}</title>
   <meta name="description" content="{{ pageDesc }}">
   {%- if page.url == "/404.html" %}
   <meta name="robots" content="noindex">

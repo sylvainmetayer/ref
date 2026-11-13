@@ -14,7 +14,7 @@ steps:
   - "Choisis ton offre Infomaniak et crée ton compte."
 conditions:
   - "Lien d'affiliation : je touche une commission sur ton achat, sans surcoût pour toi"
-metaTitle: "Infomaniak : mon lien d'affiliation (kDrive, mail, hébergement)"
+metaTitle: "Infomaniak : lien affilié kDrive, mail et hébergement"
 metaDesc: "Lien d'affiliation Infomaniak, l'hébergeur suisse : kDrive, mail sur ton domaine, hébergement web. Mon avis d'utilisateur de kDrive et de leur mail."
 draft: false
 ---

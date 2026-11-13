@@ -15,7 +15,7 @@ conditions:
   - "Réservé aux personnes majeures jamais clientes"
   - "Montant et conditions affichés sur la page de l'offre, ils changent à chaque campagne"
 validUntil: ''
-metaTitle: "Parrainage Boursorama (BoursoBank) : prime selon l'offre en cours"
+metaTitle: "Parrainage Boursorama (BoursoBank) : prime selon l'offre"
 metaDesc: "Lien de parrainage Boursorama (BoursoBank) : prime variable selon l'offre en cours. Mon avis de client, du compte courant à l'assurance-vie."
 draft: false
 ---

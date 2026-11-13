@@ -18,7 +18,7 @@ conditions:
   - "Nouveau client Famileo"
   - "Le mois offert ne s'applique pas à la formule hebdomadaire"
 validUntil: ""
-metaTitle: "Parrainage Famileo : 1 mois de gazette offert"
+metaTitle: "Code parrainage Famileo : 1 mois de gazette offert"
 metaDesc: "Code parrainage Famileo : un mois de gazette offert à l'inscription. Mon avis après deux gazettes ouvertes pour des proches."
 draft: false
 ---

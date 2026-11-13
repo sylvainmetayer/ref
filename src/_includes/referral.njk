@@ -59,7 +59,7 @@ narrow: true
   <section class="panel prose">{{ content | safe }}</section>
   {%- endif %}
 
-  {%- set others = collections.referrals | except(page.url) %}
+  {%- set others = collections.referrals | related(page.url, category) %}
   {%- if others.length %}
   <section>
     <h2 class="section-title">D'autres bonus</h2>
