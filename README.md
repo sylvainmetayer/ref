@@ -11,7 +11,7 @@ mise run build    # génère _site/
 mise tasks        # liste des tâches
 ```
 
-Node 24 est installé par mise (`mise install`) ; les dépendances npm sont installées automatiquement par les tâches si `package.json` a changé.
+Node 26 est installé par mise (`mise install`) ; les dépendances npm sont installées automatiquement par les tâches si `package.json` a changé.
 
 ## Contenu
 

@@ -7,6 +7,8 @@ const longDate = new Intl.DateTimeFormat("fr-FR", { day: "numeric", month: "long
 export default function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("src/assets");
   eleventyConfig.addPassthroughCopy("src/admin");
+  // Sveltia CMS servi depuis npm (version suivie par Renovate, intégrité garantie par package-lock.json)
+  eleventyConfig.addPassthroughCopy({ "node_modules/@sveltia/cms/dist": "admin/cms" }, { filter: (path) => !/\.(map|mjs)$/.test(path) });
   eleventyConfig.addPassthroughCopy({ "src/_headers": "_headers", "src/favicon.svg": "favicon.svg" });
 
   // Minification de la feuille de styles et du script à la génération (pas en --serve)
