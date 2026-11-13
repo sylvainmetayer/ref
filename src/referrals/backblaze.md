@@ -2,7 +2,7 @@
 title: "Backblaze"
 link: ""
 code: ""
-category: "Cloud"
+category: "Cloud et tech"
 kind: "Parrainage"
 gain: "1 mois"
 gainLabel: "offert"
