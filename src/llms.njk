@@ -1,0 +1,12 @@
+---
+permalink: /llms.txt
+eleventyExcludeFromCollections: true
+---
+# {{ site.name }}
+
+> {{ site.description | safe }} Site personnel de {{ site.author }} : uniquement des services qu'il utilise, avec le lien ou le code, l'avantage pour le filleul et son avis.
+
+## Parrainages
+{% for item in collections.referrals %}
+- [{{ item.data.heading | safe }}]({{ site.url }}{{ item.url }}){% if item.data.advantage %} : {{ item.data.advantage | safe }}{% endif %}{% if item.data.validUntil %} (jusqu'au {{ item.data.validUntil | isoDate }}){% endif %}
+{%- endfor %}

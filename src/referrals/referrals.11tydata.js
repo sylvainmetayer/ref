@@ -40,12 +40,8 @@ export default {
             "L'avantage est appliqué selon les conditions de l'offre.",
           ];
     },
-    // Titre Google : requête visée (« code/lien parrainage X ») + avantage chiffré
-    metaTitle: (data) => {
-      if (data.metaTitle) return data.metaTitle;
-      const label = data.code ? "Code parrainage" : "Lien de parrainage";
-      return data.gain ? `${label} ${data.title} : ${data.gain} ${data.gainLabel || ""}`.trim() : `${label} ${data.title}`;
-    },
+    // Titre Google : le H1 (requête « parrainage X » + avantage chiffré), sauf surcharge
+    metaTitle: (data) => data.metaTitle || data.heading,
     metaDesc: (data) =>
       data.metaDesc ||
       `${data.advantage ? `${data.advantage} chez ${data.title}` : `Inscris-toi chez ${data.title}`} avec mon ${data.code ? "code" : "lien"} de parrainage. Mon avis sur ${data.title} et les étapes pour profiter de l'offre.`,

@@ -44,9 +44,14 @@ export default function (eleventyConfig) {
 
   eleventyConfig.addFilter("json", (value) => JSON.stringify(value));
 
-  // Autres services que celui de la page courante
   eleventyConfig.addFilter("head", (items, n) => items.slice(0, n));
-  eleventyConfig.addFilter("except", (items, url) => items.filter((item) => item.url !== url));
+  // Même catégorie d'abord, puis les suivants dans l'ordre alphabétique en repartant de la page
+  // courante : chaque fiche reçoit des liens, pas seulement les premières de l'alphabet
+  eleventyConfig.addFilter("related", (items, url, category) => {
+    const at = items.findIndex((item) => item.url === url);
+    const rest = [...items.slice(at + 1), ...items.slice(0, Math.max(at, 0))];
+    return [...rest.filter((item) => item.data.category === category), ...rest.filter((item) => item.data.category !== category)];
+  });
 
   return {
     dir: { input: "src", output: "_site" },

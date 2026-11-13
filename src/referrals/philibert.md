@@ -10,7 +10,7 @@ advantage: "Une réduction sur ta première commande de jeux de société"
 tint: ""
 logo: "/assets/logos/philibert.png"
 date: 2026-10-14
-metaTitle: ""
+metaTitle: "Parrainage Philibert : réduction sur ta 1re commande"
 metaDesc: "Lien de parrainage Philibert : une réduction sur ta première commande de jeux de société."
 draft: false
 ---
