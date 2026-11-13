@@ -6,13 +6,6 @@
   "customManagers": [
     {
       "customType": "regex",
-      "description": "Sveltia CMS chargé depuis unpkg : l'attribut integrity est à recalculer à la main (cf. src/admin/index.html)",
-      "managerFilePatterns": ["/^src/admin/index\\.html$/"],
-      "matchStrings": ["https://unpkg\\.com/(?<depName>@sveltia/cms)@(?<currentValue>\\d+\\.\\d+\\.\\d+)/"],
-      "datasourceTemplate": "npm"
-    },
-    {
-      "customType": "regex",
       "description": "Extension gh-actions-lock épinglée dans verify-lockfile.yml (--pin vX.Y.Z)",
       "managerFilePatterns": ["/^\\.github/workflows/verify-lockfile\\.yml$/"],
       "matchStrings": ["--pin (?<currentValue>v\\d+\\.\\d+\\.\\d+)"],
