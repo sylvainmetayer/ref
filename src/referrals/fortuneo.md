@@ -2,7 +2,7 @@
 title: "Fortuneo"
 link: "https://mabanque.fortuneo.fr/fr/offres-parrainage/offres-parrainage.jsp?origine=PARRAINAGE&codeParrain=13061272"
 code: "13061272"
-category: "Banque"
+category: "Banque et épargne"
 kind: "Parrainage"
 gain: "130 €"
 gainLabel: "max. selon l'offre"

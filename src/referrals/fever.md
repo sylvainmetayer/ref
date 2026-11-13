@@ -2,7 +2,7 @@
 title: "Fever"
 link: "https://use.fvr.to/QRVj2DzN3Rb?ref=SYLVAINM31828"
 code: "SYLVAINM31828"
-category: "Sorties"
+category: "Loisirs et mobilité"
 kind: "Parrainage"
 gain: "5 €"
 gainLabel: "1er événement"

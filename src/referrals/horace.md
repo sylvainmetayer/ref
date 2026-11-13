@@ -2,7 +2,7 @@
 title: "Horace"
 link: "https://hor.ac/sylva635"
 code: ""
-category: "Soins"
+category: "Maison et quotidien"
 kind: "Parrainage"
 gain: "-20 %"
 gainLabel: "1re commande"

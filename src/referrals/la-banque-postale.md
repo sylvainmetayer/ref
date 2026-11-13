@@ -2,7 +2,7 @@
 title: "La Banque Postale"
 link: "https://parrainage-filleul.labanquepostale.fr?idup=293839"
 code: ""
-category: "Banque"
+category: "Banque et épargne"
 kind: "Parrainage"
 gain: "50 €"
 gainLabel: "à l'ouverture"

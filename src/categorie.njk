@@ -1,0 +1,25 @@
+---
+layout: base.njk
+pagination:
+  data: collections.categoryPages
+  size: 1
+  alias: cat
+permalink: "{{ cat.url }}"
+eleventyComputed:
+  metaTitle: "Parrainage {{ cat.name | lower }} : {{ cat.items.length }} offres"
+  metaDesc: "Mes liens et codes de parrainage en {{ cat.name | lower }} : {{ cat.items | titleList }}. L'avantage offert et mon avis sur chaque service."
+---
+<nav class="crumbs" aria-label="Fil d'Ariane"><a href="/">{% include "icons/back.njk" %}Tous les codes</a> <span aria-hidden="true">/</span> <span aria-current="page">{{ cat.name }}</span></nav>
+<section class="hero">
+  <h1>Parrainages {{ cat.name | lower }}</h1>
+  <p>Les {{ cat.items.length }} services de cette catégorie que j'utilise : {{ cat.items | titleList }}.</p>
+</section>
+
+<main id="contenu">
+  <ul class="cards">
+  {%- for item in cat.items %}
+    {%- set r = item.data %}
+    {% include "card.njk" %}
+  {%- endfor %}
+  </ul>
+</main>

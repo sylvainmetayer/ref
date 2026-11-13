@@ -2,7 +2,7 @@
 title: "EDF"
 link: ""
 code: ""
-category: "Énergie"
+category: "Maison et quotidien"
 kind: "Parrainage"
 gain: "40 €"
 gainLabel: "sur ta facture"

@@ -24,13 +24,25 @@ export default function (eleventyConfig) {
 
   // Services publiés (draft: true exclus), triés par nom
   let referrals = [];
-  eleventyConfig.addCollection("referrals", (api) => {
-    referrals = api
+  const published = (api) =>
+    api
       .getFilteredByGlob("src/referrals/*.md")
       .filter((item) => !item.data.draft)
       .sort((a, b) => a.data.title.localeCompare(b.data.title, "fr"));
-    return referrals;
-  });
+  eleventyConfig.addCollection("referrals", (api) => (referrals = published(api)));
+
+  // Une page /parrainage-<catégorie>/ par catégorie d'au moins 3 fiches publiées : en dessous,
+  // la page serait un quasi-doublon de la fiche
+  const slugify = eleventyConfig.getFilter("slugify");
+  const categoryUrl = (name) => `/parrainage-${slugify(name)}/`;
+  const categoryPages = (items) =>
+    Object.entries(Object.groupBy(items, (item) => item.data.category || ""))
+      .filter(([name, group]) => name && group.length >= 3)
+      .map(([name, group]) => ({ name, url: categoryUrl(name), items: group }))
+      .sort((a, b) => a.name.localeCompare(b.name, "fr"));
+  eleventyConfig.addCollection("categoryPages", (api) => categoryPages(published(api)));
+  // Adresse de la page d'une catégorie, vide si elle n'a pas de page
+  eleventyConfig.addFilter("categoryUrl", (name) => categoryPages(referrals).find((page) => page.name === name)?.url || "");
 
   // Image de partage de chaque fiche : /assets/og/<slug>.png (cf. og:image dans base.njk)
   eleventyConfig.on("eleventy.after", async ({ dir }) => {

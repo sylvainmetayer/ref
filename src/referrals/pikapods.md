@@ -2,7 +2,7 @@
 title: "PikaPods"
 link: ""
 code: ""
-category: "Cloud"
+category: "Cloud et tech"
 kind: "Parrainage"
 gain: ""
 gainLabel: "de crédit"

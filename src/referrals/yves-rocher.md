@@ -2,7 +2,7 @@
 title: "Yves Rocher"
 link: ""
 code: ""
-category: "Beauté"
+category: "Maison et quotidien"
 kind: "Parrainage"
 gain: "20 €"
 gainLabel: "de cadeau"

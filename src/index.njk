@@ -26,38 +26,7 @@ metaTitle: "Codes et liens de parrainage de Sylvain"
   <ul class="cards">
   {%- for item in collections.referrals %}
     {%- set r = item.data %}
-    <li class="card" data-category="{{ r.category }}" style="--tint: {{ r.tintColor }}">
-      <div class="card__head">
-        {% include "logo.njk" %}
-        <div class="card__title">
-          <h2><a href="{{ item.url }}">{{ r.title }}</a></h2>
-          <div class="meta">
-            <span>{% if r.category %}{{ r.category }} · {% endif %}{{ r.kind }}</span>
-            {%- if r.isNew %}<span class="badge">Nouveau</span>{% endif %}
-            {%- if r.expired %}<span class="badge">Offre expirée</span>{% endif %}
-          </div>
-        </div>
-        {%- if r.gain %}
-        <div class="gain">
-          <div class="gain__value">{{ r.gain }}</div>
-          {%- if r.gainLabel %}<div class="gain__label">{{ r.gainLabel }}</div>{% endif %}
-        </div>
-        {%- endif %}
-      </div>
-      <div class="code-box">
-        {%- if r.code %}
-        <code>{{ r.code }}</code>
-        {%- set code = r.code %}{% set btnClass = "" %}{% set copyLabel = "Copier" %}
-        {% include "copy-button.njk" %}
-        {%- elif r.link %}
-        <span class="code-box__label">{{ "Lien affilié" if r.kind == "Affiliation" else "Lien de parrainage" }}</span>
-        <a class="btn" href="/go/{{ r.slug }}" rel="sponsored nofollow">Ouvrir<span class="sr-only"> le lien {{ r.title }}</span>{% include "icons/external.njk" %}</a>
-        {%- else %}
-        <span class="code-box__label">Sur demande</span>
-        <a class="btn" href="{{ r.contactUrl }}">Par e-mail</a>
-        {%- endif %}
-      </div>
-    </li>
+    {% include "card.njk" %}
   {%- endfor %}
   </ul>
 

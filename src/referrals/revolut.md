@@ -2,7 +2,7 @@
 title: "Revolut"
 link: "https://revolut.com/referral/?referral-code=sylvaidp6n&geo-redirect"
 code: ""
-category: "Banque"
+category: "Banque et épargne"
 kind: "Parrainage"
 gain: ""
 gainLabel: ""

@@ -2,7 +2,7 @@
 title: "Mutuelle de Poitiers"
 link: ""
 code: ""
-category: "Assurance"
+category: "Maison et quotidien"
 kind: "Parrainage"
 gain: ""
 gainLabel: ""

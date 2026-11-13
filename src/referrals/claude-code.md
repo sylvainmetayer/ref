@@ -2,7 +2,7 @@
 title: "Claude Code"
 link: "https://claude.ai/referral/-WM4xatGzg"
 code: ""
-category: "IA"
+category: "Cloud et tech"
 kind: "Parrainage"
 gain: "1 semaine"
 gainLabel: "d'essai gratuit"

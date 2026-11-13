@@ -2,7 +2,7 @@
 title: "Philibert"
 link: "https://www.philibertnet.com/fr/inscription?sponsor=philibertnet%40sylvain.dev"
 code: ""
-category: "Jeux"
+category: "Loisirs et mobilité"
 kind: "Parrainage"
 gain: ""
 gainLabel: ""

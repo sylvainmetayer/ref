@@ -2,7 +2,7 @@
 title: "Merci Facteur"
 link: "https://www.merci-facteur.com/#parrain=ekandnq"
 code: ""
-category: "Courrier"
+category: "Maison et quotidien"
 kind: "Parrainage"
 gain: "5 €"
 gainLabel: "offerts"

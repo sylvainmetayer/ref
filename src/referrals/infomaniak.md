@@ -2,7 +2,7 @@
 title: "Infomaniak"
 link: "https://www.infomaniak.com/goto/fr/home?utm_term=678e3e3cb77b1"
 code: ""
-category: "Cloud"
+category: "Cloud et tech"
 kind: "Affiliation"
 gain: ""
 gainLabel: ""

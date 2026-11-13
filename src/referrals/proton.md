@@ -2,7 +2,7 @@
 title: "Proton"
 link: "https://pr.tn/ref/1F6P2WFY"
 code: ""
-category: "Vie privée"
+category: "Cloud et tech"
 kind: "Parrainage"
 gain: "20 $"
 gainLabel: "de crédit"

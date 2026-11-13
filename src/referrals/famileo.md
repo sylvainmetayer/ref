@@ -2,7 +2,7 @@
 title: "Famileo"
 link: "https://www.famileo.com/"
 code: "R1DFB610"
-category: "Famille"
+category: "Maison et quotidien"
 kind: "Parrainage"
 gain: "1 mois"
 gainLabel: "offert"
