@@ -4,6 +4,7 @@
   "description": "Liens et codes de parrainage — ref.sylvain.dev",
   "type": "module",
   "scripts": {
+    "prebuild": "npm test",
     "build": "eleventy",
     "test": "node --test scripts/"
   },

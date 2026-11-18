@@ -90,3 +90,8 @@ test("report : vide si tout va bien, slugs sans lien sinon", () => {
   assert.match(text, /`b` : jusqu'au 2026-12-31/);
   assert.doesNotMatch(text, /https?:/);
 });
+
+test("report : un 403 anti-robot connu est ignoré, un lien mort du même site non", () => {
+  assert.equal(report([{ slug: "claude-code", result: "check", detail: "HTTP 403" }], []), "");
+  assert.match(report([{ slug: "claude-code", result: "dead", detail: "HTTP 404" }], []), /Liens morts/);
+});

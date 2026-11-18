@@ -68,11 +68,15 @@ export const readFiches = async (dir) =>
       })
   );
 
+// Sites qui répondent toujours 403 au robot alors que le lien marche : un « à vérifier » permanent
+// noierait les vrais signalements. Un lien mort (404, 410, domaine disparu) reste signalé.
+const ANTI_BOT = new Set(["claude-code"]);
+
 export const report = (links, offers) => {
   const lines = [];
   const section = (title, items) => items.length && lines.push(`## ${title}`, "", ...items, "");
   section("Liens morts", links.filter((l) => l.result === "dead").map((l) => `- [ ] \`${l.slug}\` : ${l.detail}`));
-  section("Liens à vérifier à la main", links.filter((l) => l.result === "check").map((l) => `- [ ] \`${l.slug}\` : ${l.detail} (souvent un blocage anti-robot)`));
+  section("Liens à vérifier à la main", links.filter((l) => l.result === "check" && !ANTI_BOT.has(l.slug)).map((l) => `- [ ] \`${l.slug}\` : ${l.detail} (souvent un blocage anti-robot)`));
   section("Offres expirées", offers.filter((o) => o.expired).map((o) => `- [ ] \`${o.slug}\` : expirée le ${o.validUntil}`));
   section(`Offres qui expirent dans les ${SOON_DAYS} jours`, offers.filter((o) => !o.expired).map((o) => `- [ ] \`${o.slug}\` : jusqu'au ${o.validUntil}`));
   return lines.join("\n");

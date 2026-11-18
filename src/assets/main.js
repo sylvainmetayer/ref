@@ -11,9 +11,10 @@ if (navigator.clipboard) {
     let timer;
     button.hidden = false;
     button.addEventListener("click", async () => {
-      await navigator.clipboard.writeText(button.dataset.copy);
-      button.classList.add("is-copied");
-      label.textContent = initial === "Copier" ? "Copié" : "Code copié";
+      // Presse-papiers refusé (permission, page sans focus) : on le dit au lieu de rester muet
+      const copied = await navigator.clipboard.writeText(button.dataset.copy).then(() => true, () => false);
+      button.classList.toggle("is-copied", copied);
+      label.textContent = !copied ? "Copie refusée" : initial === "Copier" ? "Copié" : "Code copié";
       clearTimeout(timer);
       timer = setTimeout(() => {
         button.classList.remove("is-copied");

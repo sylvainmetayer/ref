@@ -23,7 +23,7 @@ title: "Hetzner"                         # nom du service
 link: "https://hetzner.cloud/?ref=…"     # lien de parrainage (cible de /go/<slug>)
 code: ""                                 # code à copier (optionnel)
 category: "Cloud et tech"                # filtres de l'accueil, page catégorie
-kind: "Parrainage"                       # Parrainage | Promo
+kind: "Parrainage"                       # Parrainage | Promo | Affiliation
 gain: "20 €"                             # mis en avant, court
 gainLabel: "de crédit"                   # précision sous le gain
 advantage: "20 € de crédit offerts…"     # phrase complète, description SEO
