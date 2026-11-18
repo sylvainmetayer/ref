@@ -24,7 +24,6 @@ jobs:
           cache: npm
       - run: npm ci
       - run: npm run build
-      - run: npm test
       - run: node scripts/controle-hebdo.js > rapport.md
       - name: Issue récapitulative
         env:

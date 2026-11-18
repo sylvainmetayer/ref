@@ -6,7 +6,7 @@
   <meta name="generator" content="Eleventy">
   {%- set pageTitle = metaTitle or site.name %}
   {%- if page.url == "/" %}
-  {%- set pageDesc = "Mes codes et liens de parrainage pour " ~ (collections.referrals | titleList) ~ ", avec l'avantage offert et mon avis sur chaque service." %}
+  {%- set pageDesc = "Mes codes et liens de parrainage pour " ~ collections.referrals.length ~ " services que j'utilise, dont " ~ (collections.referrals | head(4) | titleList) ~ ". L'avantage offert et mon avis sur chacun." %}
   {%- else %}
   {%- set pageDesc = metaDesc or site.description %}
   {%- endif %}

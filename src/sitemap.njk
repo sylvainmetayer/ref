@@ -9,6 +9,6 @@ eleventyExcludeFromCollections: true
   <url><loc>{{ site.url }}{{ cat.url }}</loc></url>
 {%- endfor %}
 {%- for item in collections.referrals %}
-  <url><loc>{{ site.url }}{{ item.url }}</loc></url>
+  <url><loc>{{ site.url }}{{ item.url }}</loc>{% if item.data.verifiedOn %}<lastmod>{{ item.data.verifiedOn | isoDate }}</lastmod>{% endif %}</url>
 {%- endfor %}
 </urlset>
