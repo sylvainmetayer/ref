@@ -28,6 +28,8 @@ faq:
     a: "Jusqu'au 31 décembre 2026 à 20 h. La souscription se fait uniquement par téléphone, en donnant d'abord le nom, le prénom et l'e-mail du parrain."
   - q: "Le parrainage EDF se cumule-t-il avec une autre promotion ?"
     a: "Non, sauf si les mentions légales de l'offre ou le conseiller le précisent."
+  - q: "Faut-il un code promo pour le parrainage EDF ?"
+    a: "Non, le parrainage EDF fonctionne sans code. Tu donnes le nom, le prénom et l'e-mail du parrain au conseiller pendant la souscription par téléphone, et tu reçois 40 € sur ta facture."
 sources:
   - label: "Modalités du programme de parrainage EDF"
     url: "https://particulier.edf.fr/content/dam/2-Actifs/Documents/parrainage/modalites-programme-parrainage-edf.pdf"
