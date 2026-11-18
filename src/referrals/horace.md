@@ -9,8 +9,22 @@ gainLabel: "1re commande"
 advantage: "20 % de réduction sur la première commande"
 tint: ""
 logo: "/assets/logos/horace.png"
+conditions:
+  - "Réservé à ta première commande, une fois ton compte créé"
+  - "Une commande payée avec une carte cadeau Horace n'est pas éligible au parrainage"
 metaTitle: ""
 metaDesc: "Lien de parrainage Horace : 20 % de réduction sur ta première commande de soins pour homme. Mon avis sur leurs parfums, déodorants et soins visage."
+faq:
+  - q: "Combien rapporte le parrainage Horace ?"
+    a: "20 % de réduction sur ta première commande. La réduction s'applique directement sur la page de commande, une fois ton compte créé."
+  - q: "Peut-on payer avec une carte cadeau Horace ?"
+    a: "Une commande passée avec une carte cadeau Horace n'est pas éligible au parrainage."
+sources:
+  - label: "Page d'accueil des filleuls Horace"
+    url: "https://horace.com/fr/referral-welcome"
+  - label: "Conditions du programme de parrainage Horace"
+    url: "https://horace.com/fr/horace-referral-terms"
+verifiedOn: 2026-11-18
 draft: false
 ---
 
