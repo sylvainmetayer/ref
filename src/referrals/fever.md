@@ -11,6 +11,9 @@ tint: ""
 logo: "/assets/logos/fever.png"
 metaTitle: ""
 metaDesc: "Code parrainage Fever : 5 € de réduction sur ton premier événement. Mon avis : je m'en sers pour trouver des idées de sorties et offrir des billets."
+faq:
+  - q: "Y a-t-il un code promo Fever ?"
+    a: "Mon code de parrainage SYLVAINM31828 s'utilise comme un code promo : il donne 5 € de réduction sur ton premier événement."
 draft: false
 ---
 

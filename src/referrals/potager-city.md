@@ -25,6 +25,8 @@ faq:
     a: "Oui : 20 € pour la première commande, 15 € pour la deuxième et 13 € pour la troisième."
   - q: "Combien de temps les remises suivantes sont-elles valables ?"
     a: "La remise de la 2e commande est valable 15 jours après la livraison de la 1re, celle de la 3e 15 jours après la livraison de la 2e."
+  - q: "Y a-t-il un code promo Potager City ?"
+    a: "Mon code de parrainage AC-IIINTDYD s'utilise comme un code promo : il donne 18 € de remise répartis sur tes 3 premières commandes."
 sources:
   - label: "Page parrainage de Potager City"
     url: "https://www.potagercity.fr/parrainage"

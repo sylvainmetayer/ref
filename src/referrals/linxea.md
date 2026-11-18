@@ -23,6 +23,8 @@ faq:
     a: "Par e-mail, une fois le contrat validé par l'assureur et le délai de renonciation de 30 jours passé. Le lien reçu dans l'e-mail est valable 3 mois."
   - q: "Peut-on cumuler le parrainage Linxea avec une offre promotionnelle ?"
     a: "Non. Si tu utilises un code offre de bienvenue ou une offre promotionnelle à la souscription, le parrainage est invalidé et personne ne reçoit de récompense."
+  - q: "Existe-t-il un code promo Linxea ?"
+    a: "Si tu as un code d'offre de bienvenue Linxea, il ne se cumule pas avec le parrainage : il faut choisir l'un ou l'autre. Mon lien de parrainage donne une carte cadeau de 50 €."
 sources:
   - label: "Aide Linxea : le parrainage, comment ça marche"
     url: "https://support.linxea.com/fr/articles/4819-parrainage-comment-ca-marche"

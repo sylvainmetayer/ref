@@ -19,6 +19,8 @@ faq:
     a: "20 % de réduction sur ta première commande. La réduction s'applique directement sur la page de commande, une fois ton compte créé."
   - q: "Peut-on payer avec une carte cadeau Horace ?"
     a: "Une commande passée avec une carte cadeau Horace n'est pas éligible au parrainage."
+  - q: "Y a-t-il un code promo Horace ?"
+    a: "Je n'en ai pas à partager. Mon lien de parrainage donne 20 % de réduction sur ta première commande, appliqués directement sur la page de commande."
 sources:
   - label: "Page d'accueil des filleuls Horace"
     url: "https://horace.com/fr/referral-welcome"
