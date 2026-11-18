@@ -18,10 +18,17 @@ conditions:
 validUntil: ''
 metaTitle: ''
 metaDesc: "Lien de parrainage Potager City : 18 € de réduction sur tes 3 premières commandes. Mon avis sur les paniers de fruits et légumes de saison."
+faq:
+  - q: "Combien rapporte le parrainage Potager City ?"
+    a: "18 € de remise répartis sur tes 3 premières commandes : 10 €, puis 5 €, puis 3 €."
+  - q: "Y a-t-il un minimum d'achat ?"
+    a: "Oui : 20 € pour la première commande, 15 € pour la deuxième et 13 € pour la troisième."
+  - q: "Combien de temps les remises suivantes sont-elles valables ?"
+    a: "La remise de la 2e commande est valable 15 jours après la livraison de la 1re, celle de la 3e 15 jours après la livraison de la 2e."
 sources:
   - label: "Page parrainage de Potager City"
     url: "https://www.potagercity.fr/parrainage"
-verifiedOn: 2026-11-13
+verifiedOn: 2026-11-18
 draft: false
 ---
 
