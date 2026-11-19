@@ -17,12 +17,14 @@ faq:
   - q: "Y a-t-il un code promo Fever ?"
     a: "Mon code de parrainage SYLVAINM31828 s'utilise comme un code promo : il donne 5 € de réduction sur ton premier événement."
   - q: "Sur quel achat s'applique la réduction Fever ?"
-    a: "Sur ton premier achat dans l'app Fever. Le centre d'aide parle d'un bon de bienvenue (« welcome voucher ») et ne donne pas de montant."
+    a: "Sur ton premier achat dans l'app Fever. Le centre d'aide parle d'un code de bienvenue (« welcome code ») et ne donne pas de montant."
+  - q: "Où saisir le code Fever ?"
+    a: "Au moment de payer, avant de valider : choisis « Apply voucher or gift card », puis « Add voucher code », et colle le code. Un seul bon par achat, et il ne peut pas être ajouté après le paiement."
   - q: "Que reçoit le parrain chez Fever ?"
     a: "Un nouveau bon de réduction sur mon compte quand tu achètes avec mon code. Fever ne limite pas le nombre d'amis invités."
 sources:
-  - label: "Centre d'aide Fever : What is a welcome voucher?"
-    url: "https://support.feverup.com/hc/en-us/articles/38499451914004-What-is-a-welcome-voucher"
+  - label: "Centre d'aide Fever : How do I use a voucher or a gift card?"
+    url: "https://support.feverup.com/hc/en-us/articles/38987663451668-How-do-I-use-a-voucher-or-a-gift-card"
 verifiedOn: 2026-11-19
 draft: false
 ---
