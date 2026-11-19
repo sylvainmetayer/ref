@@ -31,6 +31,6 @@ draft: false
 
 ## Mon avis sur Fever
 
-Fever est une billetterie de sorties : concerts, expositions, visites. Je m'en sers pour trouver des idées de sorties et pour offrir des billets à des proches.
+Fever est une billetterie de sorties : concerts, expositions, visites. Je m'en sers pour trouver des idées de sorties et pour offrir des billets à des proches. J'y ai pris des places pour des expositions et des concerts Candlelight.
 
 Avec mon code, tu as 5 € de réduction sur ton premier événement.

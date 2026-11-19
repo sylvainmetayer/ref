@@ -36,6 +36,6 @@ draft: false
 
 ## Mon avis sur Famileo
 
-Famileo transforme les photos et messages postés par la famille dans l'appli en une gazette papier envoyée chaque mois à un proche qui n'a pas internet. J'en ai ouvert deux pour des proches de ma famille.
+Famileo transforme les photos et messages postés par la famille dans l'appli en une gazette papier envoyée chaque mois à un proche qui n'a pas internet. J'en ai ouvert deux pour des proches de ma famille, et je m'en sers depuis plus de deux ans.
 
 Ça marche bien pour quelqu'un qui n'a pas de smartphone : la gazette arrive, on en parle au téléphone, et toute la famille participe depuis l'appli.

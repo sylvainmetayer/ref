@@ -33,6 +33,6 @@ draft: false
 
 Getaround permet de louer la voiture d'un particulier près de chez toi. Je n'ai pas de voiture, alors je m'en sers pour des locations ponctuelles.
 
-Beaucoup de voitures s'ouvrent directement depuis l'appli, sans rendez-vous pour se passer les clés. C'est ce qui me la fait choisir plutôt qu'une agence de location.
+Beaucoup de voitures s'ouvrent directement depuis l'appli, sans rendez-vous pour se passer les clés. C'est ce qui me la fait choisir plutôt qu'une agence de location. Attention à ne pas dépasser le kilométrage inclus : au-delà, ça coûte cher.
 
 Avec mon lien, tu as 15 € de crédit location dès ton inscription.

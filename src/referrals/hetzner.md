@@ -25,6 +25,6 @@ draft: false
 
 ## Mon avis sur Hetzner
 
-Hetzner est un hébergeur allemand. J'y fais tourner une bonne partie de mon homelab : le <abbr title="serveur privé virtuel">VPS</abbr> qui expose mes services auto-hébergés, le serveur d'une application perso et une Storage Box pour les sauvegardes. Tout est décrit en Terraform (OpenTofu) et piloté par leur <abbr title="interface de programmation">API</abbr>.
+Hetzner est un hébergeur allemand. J'y fais tourner une bonne partie de mon homelab : le <abbr title="serveur privé virtuel">VPS</abbr> qui expose mes services auto-hébergés, le serveur d'une application perso et une Storage Box pour les sauvegardes. Tout est décrit en Terraform (OpenTofu) et piloté par leur <abbr title="interface de programmation">API</abbr>. J'y suis depuis plus de deux ans, sans rien de notable à signaler.
 
 Avec mon lien, tu reçois 20 € de crédit à l'inscription.
