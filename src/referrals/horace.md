@@ -32,6 +32,6 @@ draft: false
 
 ## Mon avis sur Horace
 
-Horace est une marque française de soins pour homme. Je leur achète mon parfum, mon déodorant et des soins pour le visage.
+Horace est une marque française de soins pour homme. Je leur achète mon parfum, mon déodorant et des soins pour le visage depuis plus de deux ans, en recommandant quand un produit est fini. C'est plus cher qu'en grande distribution.
 
 Avec mon lien, tu as 20 % de réduction sur ta première commande.

@@ -41,4 +41,4 @@ draft: false
 
 ## Mon avis sur EDF
 
-Je suis client EDF pour l'électricité. Le parrainage se fait par téléphone, sans lien ni code : écris-moi et je t'envoie les informations à donner au conseiller.
+Je suis client EDF pour l'électricité, au Tarif Bleu, et je n'ai jamais eu d'autre fournisseur. Le parrainage, lui, ne vaut que pour une offre de marché. Le parrainage se fait par téléphone, sans lien ni code : écris-moi et je t'envoie les informations à donner au conseiller.
