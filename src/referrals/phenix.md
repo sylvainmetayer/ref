@@ -33,6 +33,6 @@ draft: false
 
 Phenix est une application anti-gaspi : les commerçants près de chez toi y vendent leurs invendus en paniers, à prix réduit. J'y prends un panier de temps en temps, au supermarché, en boulangerie, chez un primeur ou chez un traiteur.
 
-Ce que j'apprécie : les paniers coûtent moins cher qu'en rayon, les commerces sont proches de chez moi et ces invendus ne sont pas jetés. J'aime bien aussi découvrir le contenu du panier en allant le chercher.
+Ce que j'apprécie : les paniers coûtent moins cher qu'en rayon, les commerces sont proches de chez moi et ces invendus ne sont pas jetés. J'aime bien aussi découvrir le contenu du panier en allant le chercher. Deux limites : le contenu est inégal d'un panier à l'autre, et les paniers partent vite.
 
 Avec mon code, tu reçois 1 € à dépenser sur l'appli après ta première commande. Pense à le saisir à l'inscription.

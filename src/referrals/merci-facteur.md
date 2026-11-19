@@ -27,6 +27,6 @@ draft: false
 
 ## Mon avis sur Merci Facteur
 
-Merci Facteur imprime et poste à ta place le courrier que tu écris en ligne. Je m'en sers de temps en temps pour envoyer des cartes postales depuis l'appli.
+Merci Facteur imprime et poste à ta place le courrier que tu écris en ligne. Je m'en sers de temps en temps pour envoyer des cartes postales depuis l'appli. Rien à redire jusqu'ici.
 
 Avec mon lien, tu reçois 5 € une fois que tu as atteint 10 € d'envois.

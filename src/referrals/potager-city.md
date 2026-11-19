@@ -38,6 +38,6 @@ draft: false
 
 Potager City livre des paniers de fruits et légumes de saison, issus de producteurs. Je commande de temps en temps un panier de légumes et un panier de fruits, que je récupère en point relais chez le fleuriste à côté de chez moi.
 
-Ce que j'apprécie : les produits suivent les saisons, ils sont frais et de bonne qualité, et ils viennent de producteurs locaux.
+Ce que j'apprécie : les produits suivent les saisons, ils sont frais et de bonne qualité, et ils viennent de producteurs locaux. Je n'ai rien eu à leur reprocher jusqu'ici.
 
 Avec mon lien, tu as 18 € de réduction répartis sur tes 3 premières commandes.

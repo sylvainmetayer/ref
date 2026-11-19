@@ -34,6 +34,6 @@ draft: false
 
 ## Mon avis sur Infomaniak
 
-Infomaniak est un hébergeur suisse. J'y ai mon stockage en ligne avec kDrive et les adresses mail de mes domaines. Je l'ai choisi en partie parce que c'est une entreprise suisse, avec des données hébergées en Suisse.
+Infomaniak est un hébergeur suisse. J'y paie deux services : kDrive pour mon stockage en ligne, et le Service Mail pour les adresses de mes domaines. Je l'ai choisi en partie parce que c'est une entreprise suisse, avec des données hébergées en Suisse.
 
 C'est un lien d'affiliation et non un parrainage : tu paies le même prix, et je touche une commission sur ton achat.
