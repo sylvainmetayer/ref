@@ -35,6 +35,6 @@ draft: false
 
 ## Mon avis sur La Banque Postale
 
-La Banque Postale, c'est la banque de La Poste. J'y suis client depuis longtemps.
+La Banque Postale, c'est la banque de La Poste. J'y suis client depuis longtemps et j'y ai toujours un compte courant.
 
 Avec mon lien, tu reçois 50 € à l'ouverture d'une Formule de compte (sauf la Formule Simplicité). La prime arrive sur ton compte dans les 3 mois.

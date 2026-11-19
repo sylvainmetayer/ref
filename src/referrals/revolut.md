@@ -38,6 +38,6 @@ draft: false
 
 ## Mon avis sur Revolut
 
-J'ai ouvert Revolut en 2022, surtout pour les voyages : payer en devises sans frais de change, et garder la carte comme solution de secours. Au quotidien ma banque principale reste ailleurs, mais Revolut sert à chaque déplacement.
+J'ai ouvert Revolut en 2022, surtout pour les voyages : payer en devises sans frais de change, et garder la carte comme solution de secours. Au quotidien ma banque principale reste ailleurs, mais Revolut sert à chaque déplacement. Je suis resté sur la formule Standard, la gratuite.
 
 Le montant de la prime change tout le temps. Regarde ce qui est affiché dans l'app au moment où tu t'inscris, c'est ça qui compte.

@@ -39,7 +39,7 @@ draft: false
 
 ## Mon avis sur Boursorama
 
-Boursorama s'appelle BoursoBank depuis fin 2023 (c'est la banque en ligne de la Société Générale), même si presque tout le monde dit encore Boursorama. C'est là que j'ai mon compte courant principal, celui du salaire et des dépenses de tous les jours.
+Boursorama s'appelle BoursoBank depuis fin 2023 (c'est la banque en ligne de la Société Générale), même si presque tout le monde dit encore Boursorama. C'est là que j'ai mon compte courant principal, celui du salaire et des dépenses de tous les jours, avec la carte Ultim. J'y suis depuis plus de trois ans et je n'ai rien de notable à lui reprocher.
 
 J'y ai aussi un compte bourse et une assurance-vie, ce qui me permet de tout suivre dans la même appli.
 
