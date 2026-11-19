@@ -10,17 +10,18 @@ Verdict : la technique est propre, mais personne ne pointe vers le site et les f
 | 4 | CUMULATIF | Aucun lien entrant visible : la page d'accueil de www.sylvain.dev ne pointe pas vers ref.sylvain.dev (seule la redirection 301 de `/parrainage` existe) | Sans autorité, les requêtes « parrainage X » restent aux agrégateurs | Lien dans la navigation ou le pied de page de www.sylvain.dev, puis profil GitHub et README des dépôts publics | Sylvain | à faire |
 | 5 | REVENU | Indexation non vérifiée (pas d'accès à la Search Console) | Une fiche non indexée ne rapporte rien | Search Console : soumettre le sitemap, inspecter les 18 URL, relever les requêtes qui affichent déjà le site | Sylvain | à faire |
 | 6 | REVENU | Avis de 31 à 94 mots par fiche | Pages jugées minces face à des pages concurrentes de 500 mots et plus | Étoffer les avis avec ton usage réel (depuis quand, quelle formule, ce qui t'a gêné) et les conditions officielles sourcées. Commencer par les banques, où la prime est la plus forte | Sylvain, puis agent pour la mise en forme | à faire |
-| 7 | REVENU | 4 fiches sans montant (Boursorama, Revolut, Philibert, Infomaniak) | Un titre sans chiffre attire moins de clics | Relever le montant de la campagne en cours dans chaque espace client et le dater avec `validUntil` | Sylvain | à faire |
+| 7 | REVENU | 2 fiches sans montant : Boursorama et Revolut. Philibert est réglé (5 €). Infomaniak est une affiliation sans avantage client, donc sans montant à afficher | Un titre sans chiffre attire moins de clics | Boursorama : la campagne change chaque semaine (180 € le 13 novembre, 260 € du 18 au 24 novembre 2026), un chiffre en titre serait faux au bout de quelques jours. Revolut : montant visible seulement dans l'app, à relever et à dater avec `validUntil` | Sylvain | à décider |
 | 8 | REVENU | L'année n'apparaît dans aucun titre alors que la requête type est « code parrainage X 2026 » | Clics perdus sur les recherches datées | À décider : ajouter l'année de build au titre. Non fait, car je n'ai pas pu comparer avec les résultats Google | Sylvain | à décider |
 | 9 | REVENU | 8 brouillons sans lien (Bouygues Telecom, Coinbase, Gaz de Bordeaux, Jow, Mutuelle de Poitiers, PikaPods, Uber Eats, Yves Rocher) et Backblaze ajouté aujourd'hui | 9 pages qui pourraient se positionner n'existent pas | Récupérer les liens dans chaque espace client | Sylvain | à faire |
 
 ## Vérifié, rien à corriger
 
-- `robots.txt` ouvert par défaut, `/go/` et `/admin/` exclus, sitemap déclaré et valide (19 URL).
+- `robots.txt` ouvert par défaut, `/go/` et `/admin/` exclus, sitemap déclaré et valide (24 URL au 19 novembre).
 - 404 réelle sur une URL inconnue, HTTP vers HTTPS, barre oblique finale en 308.
 - GPTBot, OAI-SearchBot, PerplexityBot, ClaudeBot et Bingbot reçoivent 200, et l'avantage est en texte dans le HTML.
 - Canonique, Open Graph et fil d'Ariane JSON-LD sur chaque fiche. Liens sortants en `rel="sponsored nofollow"`.
 
 ## Détails (à ignorer tant que les lignes du haut ne sont pas traitées)
 
-- Pas de `lastmod` dans le sitemap, image Open Graph identique sur toutes les pages.
+- `lastmod` dans le sitemap (tiré de `verifiedOn`) et image Open Graph par fiche : faits.
+- EDF et La Banque Postale expirent le 31 décembre 2026. Au 19 novembre, aucune des deux pages officielles n'annonce la suite : relever les conditions 2027 début janvier.
