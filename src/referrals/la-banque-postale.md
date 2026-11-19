@@ -22,10 +22,14 @@ faq:
     a: "Une Formule de Compte, sauf la formule Simplicité. La souscription doit être acceptée par la banque et intervenir avant le 31 décembre 2026."
   - q: "Qui peut être filleul à La Banque Postale ?"
     a: "Une personne majeure, résidente fiscale en France, qui n'a jamais été cliente de La Banque Postale et qui n'ouvre pas le compte pour un usage professionnel. Détenir seulement un Livret A à La Banque Postale n'empêche pas d'être parrainé."
+  - q: "Y a-t-il un bonus de parrainage en novembre 2026 ?"
+    a: "Oui. Si tu souscris ta Formule de Compte entre le 2 et le 30 novembre 2026, La Banque Postale ajoute 20 € pour toi comme pour moi, soit 70 € chacun. Après le 30 novembre, la prime revient à 50 €."
 sources:
+  - label: "Offre de parrainage La Banque Postale"
+    url: "https://www.labanquepostale.fr/particulier/comptes-et-cartes/offre-parrainage.html"
   - label: "Règlement du parrainage La Banque Postale, du 1er décembre 2025 au 31 décembre 2026"
     url: "https://www.labanquepostale.fr/content/dam/lbp/documents/reglements/2026/reglement-parrainage-remunere-011225-au-311226-vdef.pdf"
-verifiedOn: 2026-11-13
+verifiedOn: 2026-11-19
 draft: false
 ---
 
