@@ -30,6 +30,6 @@ draft: false
 
 ## Mon avis sur Philibert
 
-Philibert est une boutique en ligne spécialisée dans les jeux de société, basée à Strasbourg. J'y achète des jeux de temps en temps, que je me fais livrer en point relais.
+Philibert est une boutique en ligne spécialisée dans les jeux de société, basée à Strasbourg. J'y achète des jeux de temps en temps, que je me fais livrer en point relais. Les colis arrivent vite et les boîtes sont bien protégées.
 
 Avec mon lien, tu reçois un coupon de 5 €, utilisable dès 10 € d'achat.

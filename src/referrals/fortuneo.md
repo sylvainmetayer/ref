@@ -37,6 +37,6 @@ draft: false
 
 ## Mon avis sur Fortuneo
 
-Fortuneo est la banque en ligne du Crédit Mutuel Arkéa. J'y ai aussi un compte courant depuis au moins trois ans, et c'est ma carte Gold que je prends en voyage pour payer sans frais à l'étranger.
+Fortuneo est la banque en ligne du Crédit Mutuel Arkéa. J'y ai aussi un compte courant depuis au moins trois ans, et c'est ma carte Gold que je prends en voyage pour payer sans frais à l'étranger. Je l'ai ouvert pour la prime de parrainage, et pour avoir deux cartes sur deux réseaux : une Visa chez BoursoBank, une Mastercard chez Fortuneo. Si l'une pose problème, j'ai l'autre.
 
 Mon lien renseigne déjà mon code parrain (13061272). Garde-le quand même sous la main si le formulaire te le redemande. Le montant offert dépend de l'offre en cours et du compte que tu choisis.

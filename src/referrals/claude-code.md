@@ -34,6 +34,6 @@ draft: false
 
 ## Mon avis sur Claude Code
 
-Claude Code est l'assistant de programmation d'Anthropic, qui travaille directement dans le terminal. Je m'en sers pour mes projets perso et mon homelab, de l'infra en Terraform aux scripts. Ce site a d'ailleurs été construit avec.
+Claude Code est l'assistant de programmation d'Anthropic, qui travaille directement dans le terminal. Je m'en sers pour mes projets perso et mon homelab, de l'infra en Terraform aux scripts. Ce site a d'ailleurs été construit avec. Ce qui me gêne : le prix de l'abonnement et les limites d'usage.
 
 Mon lien te donne une semaine pour l'essayer gratuitement.

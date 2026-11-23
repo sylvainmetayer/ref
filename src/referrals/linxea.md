@@ -36,6 +36,6 @@ draft: false
 
 ## Mon avis sur Linxea
 
-Linxea est un courtier en ligne qui distribue des contrats d'assurance-vie et de <abbr title="plan d'épargne retraite">PER</abbr>. J'y ai mon assurance-vie, un contrat Linxea Spirit 2 ouvert il y a au moins trois ans et choisi surtout pour ses frais bas.
+Linxea est un courtier en ligne qui distribue des contrats d'assurance-vie et de <abbr title="plan d'épargne retraite">PER</abbr>. J'y ai mon assurance-vie, un contrat Linxea Spirit 2 ouvert il y a au moins trois ans et choisi surtout pour ses frais bas. Mon épargne y est placée sur le fonds euros.
 
 Avec mon lien, tu reçois 50 € en carte cadeau quand tu souscris une assurance-vie ou un PER, à condition de ne pas déjà être client Linxea.

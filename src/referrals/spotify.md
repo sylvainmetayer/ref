@@ -29,6 +29,6 @@ draft: false
 
 ## Mon avis sur Spotify
 
-J'écoute de la musique sur Spotify tous les jours, avec un abonnement Premium Duo partagé. Ce que j'utilise le plus, ce sont les playlists et les recommandations, qui me font découvrir pas mal d'artistes.
+J'écoute de la musique sur Spotify tous les jours, avec un abonnement Premium Duo partagé. Je n'ai jamais changé de service. Ce que j'utilise le plus, ce sont les playlists et les recommandations, qui me font découvrir pas mal d'artistes.
 
 Avec mon lien, tu as 2 mois de Premium offerts.
