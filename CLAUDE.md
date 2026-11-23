@@ -1,6 +1,6 @@
 # ref.sylvain.dev
 
-Site de parrainage (Eleventy + Sveltia CMS, Cloudflare Pages). Voir README.md pour le modèle de données, les commandes `mise` et le déploiement.
+Site de parrainage (Eleventy + Pages CMS, Cloudflare Pages). Voir README.md pour le modèle de données, les commandes `mise` et le déploiement.
 
 ## Rédaction
 

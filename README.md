@@ -1,6 +1,6 @@
 # ref.sylvain.dev
 
-Liens et codes de parrainage, site statique [Eleventy](https://www.11ty.dev/) édité via [Sveltia CMS](https://github.com/sveltia/sveltia-cms).
+Liens et codes de parrainage, site statique [Eleventy](https://www.11ty.dev/) édité via [Pages CMS](https://pagescms.org).
 
 ## Développement
 
@@ -51,11 +51,11 @@ Le nom du fichier donne les URLs :
 
 `metaTitle` / `metaDesc` peuvent être ajoutés dans le frontmatter pour surcharger les valeurs générées.
 
-## Édition (Sveltia CMS)
+## Édition (Pages CMS)
 
-Interface sur `https://ref.sylvain.dev/admin/`, chaque modification est un commit sur `main`.
+Interface sur [app.pagescms.org](https://app.pagescms.org), configurée par `.pages.yml` à la racine. Chaque modification est un commit sur `main`.
 
-Connexion par token : créer un [fine-grained PAT GitHub](https://github.com/settings/personal-access-tokens/new) limité au dépôt `sylvainmetayer/ref`, permission **Contents : Read and write**, puis « Sign in with Token ».
+Connexion avec le compte GitHub, l'app Pages CMS doit être installée sur le dépôt `sylvainmetayer/ref`.
 
 ## Analytics
 
