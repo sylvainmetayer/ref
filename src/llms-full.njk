@@ -1,0 +1,36 @@
+---
+permalink: /llms-full.txt
+eleventyExcludeFromCollections: true
+---
+# {{ site.name }} : toutes les fiches
+
+> {{ site.description | safe }} Site personnel de {{ site.author }} : uniquement des services qu'il utilise. Les conditions viennent des pages officielles, à la date de relevé indiquée.
+{% for item in collections.referrals %}{% set r = item.data %}
+## {{ r.heading | safe }}
+
+- Page : {{ site.url }}{{ item.url }}
+- Catégorie : {{ r.category }} ({{ r.kind }})
+{%- if r.code %}
+- Code : {{ r.code }}
+{%- endif %}
+{%- if r.advantage %}
+- Avantage : {{ r.advantage | safe }}
+{%- endif %}
+{%- if r.validUntil %}
+- {{ "Expirée le" if r.expired else "Valable jusqu'au" }} {{ r.validUntil | isoDate }}
+{%- endif %}
+{%- if r.verifiedOn %}
+- Conditions relevées le {{ r.verifiedOn | isoDate }}{% if r.sources.length %} sur {% for s in r.sources %}{{ s.url }}{% if not loop.last %}, {% endif %}{% endfor %}{% endif %}
+{%- endif %}
+{%- for c in r.conditions %}
+- {{ c | safe }}
+{%- endfor %}
+
+{{ item.content | striptags(true) | safe }}
+{%- for f in r.faq %}
+
+### {{ f.q | safe }}
+
+{{ f.a | safe }}
+{%- endfor %}
+{% endfor %}

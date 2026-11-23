@@ -65,7 +65,8 @@ export default function (eleventyConfig) {
     return titles.length > 1 ? `${titles.slice(0, -1).join(", ")} et ${titles.at(-1)}` : titles.join("");
   });
 
-  eleventyConfig.addFilter("json", (value) => JSON.stringify(value));
+  // Champs nuls retirés : un champ JSON-LD optionnel s'écrit `x if cond else none`
+  eleventyConfig.addFilter("json", (value) => JSON.stringify(value, (key, v) => v ?? undefined));
 
   eleventyConfig.addFilter("head", (items, n) => items.slice(0, n));
   // Même catégorie d'abord, puis les suivants dans l'ordre alphabétique en repartant de la page

@@ -6,7 +6,7 @@ pagination:
   alias: cat
 permalink: "{{ cat.url }}"
 eleventyComputed:
-  metaTitle: "Parrainage {{ cat.name | lower }} : {{ cat.items.length }} offres"
+  metaTitle: "Parrainage {{ cat.name | lower }} {{ build.date.getFullYear() }} : {{ cat.items.length }} offres"
   metaDesc: "Mes liens et codes de parrainage en {{ cat.name | lower }} : {{ cat.items | titleList }}. L'avantage et mon avis sur chacun."
 ---
 <nav class="crumbs" aria-label="Fil d'Ariane"><a href="/">{% include "icons/back.njk" %}Tous les codes</a> <span aria-hidden="true">/</span> <span aria-current="page">{{ cat.name }}</span></nav>
@@ -22,4 +22,23 @@ eleventyComputed:
     {% include "card.njk" %}
   {%- endfor %}
   </ul>
+
+  <section class="panel compare">
+    <h2>Comparer les offres {{ cat.name | lower }}</h2>
+    <div class="compare__scroll">
+      <table>
+        <thead><tr><th scope="col">Service</th><th scope="col">Ce que tu reçois</th><th scope="col">Conditions relevées le</th></tr></thead>
+        <tbody>
+        {%- for item in cat.items %}
+          {%- set r = item.data %}
+          <tr>
+            <th scope="row"><a href="{{ item.url }}">{{ r.title }}</a></th>
+            <td>{% if r.expired %}<span class="badge">Offre expirée</span>{% elif r.advantage %}{{ r.advantage }}{% if r.validUntil %}, jusqu'au {{ r.validUntil | longDate }}{% endif %}{% else %}Pas d'avantage : lien affilié, même prix pour toi{% endif %}</td>
+            <td>{% if r.verifiedOn %}<time datetime="{{ r.verifiedOn | isoDate }}">{{ r.verifiedOn | shortDate }}</time>{% endif %}</td>
+          </tr>
+        {%- endfor %}
+        </tbody>
+      </table>
+    </div>
+  </section>
 </main>

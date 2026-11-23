@@ -43,13 +43,15 @@
     ]
   } | json | safe }}</script>
   {%- elif slug %}
+  {#- Même fil que celui affiché : la catégorie n'apparaît que si elle a sa page #}
+  {%- set catUrl = category | categoryUrl %}
+  {%- set crumbs = [{ "@type": "ListItem", "position": 1, "name": site.brand, "item": site.url ~ "/" }] %}
+  {%- if catUrl %}{% set crumbs = (crumbs.push({ "@type": "ListItem", "position": 2, "name": category, "item": site.url ~ catUrl }), crumbs) %}{% endif %}
+  {%- set crumbs = (crumbs.push({ "@type": "ListItem", "position": crumbs.length + 1, "name": "Parrainage " ~ title, "item": site.url ~ page.url }), crumbs) %}
+  {%- set webPage = { "@type": "WebPage", "url": site.url ~ page.url, "name": pageTitle, "description": pageDesc, "inLanguage": "fr-FR", "about": { "@type": "Organization", "name": title }, "author": { "@type": "Person", "name": site.author, "url": site.authorUrl }, "dateModified": (verifiedOn | isoDate) if verifiedOn else none } %}
   <script type="application/ld+json">{{ {
     "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
-    "itemListElement": [
-      { "@type": "ListItem", "position": 1, "name": site.brand, "item": site.url ~ "/" },
-      { "@type": "ListItem", "position": 2, "name": "Parrainage " ~ title, "item": site.url ~ page.url }
-    ]
+    "@graph": [{ "@type": "BreadcrumbList", "itemListElement": crumbs }, webPage]
   } | json | safe }}</script>
   {%- if faq.length %}
   {%- set questions = [] %}
@@ -58,6 +60,21 @@
   {%- endfor %}
   <script type="application/ld+json">{{ { "@context": "https://schema.org", "@type": "FAQPage", "mainEntity": questions } | json | safe }}</script>
   {%- endif %}
+  {%- elif cat %}
+  {%- set items = [] %}
+  {%- for item in cat.items %}
+  {%- set items = (items.push({ "@type": "ListItem", "position": loop.index, "url": site.url ~ item.url, "name": item.data.heading }), items) %}
+  {%- endfor %}
+  <script type="application/ld+json">{{ {
+    "@context": "https://schema.org",
+    "@graph": [
+      { "@type": "BreadcrumbList", "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": site.brand, "item": site.url ~ "/" },
+        { "@type": "ListItem", "position": 2, "name": cat.name, "item": site.url ~ page.url }
+      ] },
+      { "@type": "ItemList", "name": "Parrainages " ~ (cat.name | lower), "itemListElement": items }
+    ]
+  } | json | safe }}</script>
   {%- endif %}
   <link rel="preload" href="/assets/fonts/bricolage-grotesque-latin.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="/assets/style.css">
