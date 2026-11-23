@@ -1,0 +1,92 @@
+# Pages CMS — https://pagescms.org/docs/configuration/
+# Édition sur https://app.pagescms.org (connexion GitHub, app installée sur le dépôt).
+media:
+  input: src/assets/logos
+  output: /assets/logos
+
+content:
+  - name: referrals
+    label: Parrainages
+    type: collection
+    path: src/referrals
+    format: yaml-frontmatter
+    filename: "{title}.md"
+    view:
+      fields: [title, category, gain, draft]
+      primary: title
+      sort: [title, category]
+      search: [title, category]
+      default:
+        sort: title
+        order: asc
+    fields:
+      - { name: title, label: Nom du service, type: string, required: true }
+      - name: link
+        label: Lien de parrainage
+        type: string
+        description: "Vide et sans code = bouton « Me contacter » (parrainage sur demande)"
+        pattern: { regex: "^(https?://.*)?$", message: "Doit commencer par http(s)://" }
+      - { name: code, label: Code, type: string, description: "Code à copier, si le service en utilise un" }
+      - name: category
+        label: Catégorie
+        type: select
+        description: "Filtres de l'accueil et pages /parrainage-<catégorie>/ (une page dès 3 fiches publiées)"
+        options:
+          values: ["Banque et épargne", "Cloud et tech", "Maison et quotidien", "Loisirs et mobilité"]
+      - name: kind
+        label: Type
+        type: select
+        default: Parrainage
+        options:
+          values: [Parrainage, Promo, Affiliation]
+      - { name: gain, label: Gain (mis en avant), type: string, description: "Court ! Ex. 20 €, 2 mois, -50 %" }
+      - { name: gainLabel, label: Précision du gain, type: string, description: "Ex. offerts, de crédit, pendant 6 mois" }
+      - { name: advantage, label: Avantage (phrase complète), type: string, description: "Utilisé dans la description SEO" }
+      - name: tint
+        label: Couleur
+        type: select
+        description: "Fond du logo et de la page. Vide = couleur automatique"
+        options:
+          values:
+            - { name: "#BFDBFE", label: Bleu }
+            - { name: "#FDE68A", label: Jaune }
+            - { name: "#BBF7D0", label: Vert }
+            - { name: "#DDD6FE", label: Violet }
+            - { name: "#FBCFE8", label: Rose }
+            - { name: "#FED7AA", label: Orange }
+            - { name: "#A5F3FC", label: Cyan }
+      - { name: logo, label: Logo, type: image }
+      - name: date
+        label: Ajoutée le
+        type: date
+        description: "Badge « Nouveau » pendant 60 jours après cette date. Vide = pas de badge"
+        options: { format: yyyy-MM-dd }
+      - { name: steps, label: Étapes, type: string, list: true, description: "Vide = étapes génériques" }
+      - { name: conditions, label: Bon à savoir, type: string, list: true, description: "Ex. Nouveaux clients uniquement" }
+      - name: faq
+        label: Questions fréquentes
+        type: object
+        description: "Chaque réponse doit venir d'une source officielle listée dessous"
+        list:
+          collapsible: { collapsed: true, summary: "{q}" }
+        fields:
+          - { name: q, label: Question, type: string, required: true }
+          - { name: a, label: Réponse, type: text, required: true }
+      - name: sources
+        label: Sources officielles
+        type: object
+        list:
+          collapsible: { collapsed: true, summary: "{label}" }
+        fields:
+          - { name: label, label: Intitulé, type: string, required: true }
+          - name: url
+            label: Adresse
+            type: string
+            required: true
+            pattern: { regex: "^https?://", message: "Doit commencer par http(s)://" }
+      - { name: verifiedOn, label: Conditions relevées le, type: date, default: "", options: { format: yyyy-MM-dd } }
+      - { name: validUntil, label: Valable jusqu'au, type: date, default: "", options: { format: yyyy-MM-dd } }
+      - { name: metaTitle, label: Titre Google, type: string, description: "Vide = « Code/Lien de parrainage X : gain ». Viser 60 caractères max." }
+      - { name: metaDesc, label: Description Google, type: text, description: "Vide = générée. Viser 150 caractères environ." }
+      - { name: draft, label: Brouillon, type: boolean, default: false }
+      - { name: body, label: Texte de la page (SEO), type: rich-text, options: { format: markdown } }
