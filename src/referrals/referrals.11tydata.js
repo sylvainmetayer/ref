@@ -6,7 +6,12 @@ const NEW_DAYS = 60;
 
 const hash = (text) => [...text].reduce((acc, char) => (acc * 31 + char.charCodeAt(0)) >>> 0, 0);
 
-const lowerFirst = (text) => text.charAt(0).toLowerCase() + text.slice(1);
+// « Code parrainage Fortuneo[ 2026] : 150 € max. selon l'offre »
+const headline = (data, year = "") => {
+  const label = data.kind === "Promo" ? "Code promo" : data.kind === "Affiliation" ? "Lien affilié" : data.code ? "Code parrainage" : "Parrainage";
+  const name = `${label} ${data.title}${year && ` ${year}`}`;
+  return data.gain ? `${name} : ${data.gain} ${data.gainLabel || ""}`.trim() : name;
+};
 
 export default {
   layout: "referral.njk",
@@ -22,10 +27,7 @@ export default {
     // shortcut: badge figé au build (il disparaît au premier build après les 60 jours), passer à un build planifié (cron) si l'écart gêne
     isNew: (data) => Boolean(data.date) && data.build.date - new Date(data.date) < NEW_DAYS * 86_400_000,
     initial: (data) => data.title.charAt(0).toUpperCase(),
-    heading: (data) => {
-      const label = data.kind === "Promo" ? "Code promo" : data.kind === "Affiliation" ? "Lien affilié" : data.code ? "Code parrainage" : "Parrainage";
-      return data.gain ? `${label} ${data.title} : ${data.gain} ${data.gainLabel || ""}`.trim() : `${label} ${data.title}`;
-    },
+    heading: (data) => headline(data),
     stepList: (data) => {
       if (data.steps?.length) return data.steps;
       return data.code
@@ -40,8 +42,12 @@ export default {
             "L'avantage est appliqué selon les conditions de l'offre.",
           ];
     },
-    // Titre Google : le H1 (requête « parrainage X » + avantage chiffré), sauf surcharge
-    metaTitle: (data) => data.metaTitle || data.heading,
+    // Titre Google : le H1 plus l'année du build (requête « code parrainage X 2026 »), sauf surcharge
+    // (un titre surchargé reçoit l'année après le premier nom du service)
+    metaTitle: (data) => {
+      const year = data.build.date.getFullYear();
+      return data.metaTitle ? data.metaTitle.replace(data.title, `${data.title} ${year}`) : headline(data, year);
+    },
     metaDesc: (data) =>
       data.metaDesc ||
       `${data.advantage ? `${data.advantage} chez ${data.title}` : `Inscris-toi chez ${data.title}`} avec mon ${data.code ? "code" : "lien"} de parrainage. Mon avis sur ${data.title} et les étapes pour profiter de l'offre.`,

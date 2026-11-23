@@ -188,6 +188,13 @@ kbd { padding: 1px 6px; border: 1px solid var(--line); border-radius: 6px; font-
 .faq h2 + h3 { margin-top: 0; }
 .faq p { margin: 0; font-size: 15px; color: var(--ink-soft); }
 .sources { margin: 0; font-size: 14px; color: var(--muted); }
+.compare { margin-top: 28px; }
+.compare__scroll { overflow-x: auto; }
+.compare table { width: 100%; border-collapse: collapse; font-size: 15px; }
+.compare th, .compare td { padding: 10px 12px 10px 0; border-bottom: 1px solid var(--line); text-align: left; vertical-align: top; }
+.compare thead th { font-size: 13px; font-weight: 600; color: var(--muted); }
+.compare tbody tr:last-child > * { border-bottom: 0; }
+.compare td:last-child { white-space: nowrap; color: var(--muted); }
 .steps, .checklist { margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; }
 .steps { gap: 14px; }
 .steps li { display: flex; gap: 12px; align-items: flex-start; }
