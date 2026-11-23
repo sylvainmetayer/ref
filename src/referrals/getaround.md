@@ -31,7 +31,7 @@ draft: false
 
 ## Mon avis sur Getaround
 
-Getaround permet de louer la voiture d'un particulier près de chez toi. Je n'ai pas de voiture, alors je m'en sers pour des locations ponctuelles.
+Getaround permet de louer la voiture d'un particulier près de chez toi. Je n'ai pas de voiture, alors je m'en sers pour des locations ponctuelles, surtout le week-end, et je n'ai jamais eu de souci.
 
 Beaucoup de voitures s'ouvrent directement depuis l'appli, sans rendez-vous pour se passer les clés. C'est ce qui me la fait choisir plutôt qu'une agence de location. Attention à ne pas dépasser le kilométrage inclus : au-delà, ça coûte cher.
 

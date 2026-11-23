@@ -39,8 +39,8 @@ draft: false
 
 ## Mon avis sur Boursorama
 
-Boursorama s'appelle BoursoBank depuis fin 2023 (c'est la banque en ligne de la Société Générale), même si presque tout le monde dit encore Boursorama. C'est là que j'ai mon compte courant principal, celui du salaire et des dépenses de tous les jours, avec la carte Ultim. J'y suis depuis plus de trois ans et je n'ai rien de notable à lui reprocher.
+Boursorama s'appelle BoursoBank depuis fin 2023 (c'est la banque en ligne de la Société Générale), même si presque tout le monde dit encore Boursorama. C'est là que j'ai mon compte courant principal, celui du salaire et des dépenses de tous les jours, avec la carte Ultim. Je l'ai choisie parce que le compte et la carte sont gratuits, et la prime de parrainage a fini de me décider. J'y suis depuis plus de trois ans. Mon seul reproche : déposer des espèces ou un chèque n'est pas pratique.
 
-J'y ai aussi un compte bourse et une assurance-vie, ce qui me permet de tout suivre dans la même appli.
+J'y ai aussi un PEA et une assurance-vie, ce qui me permet de tout suivre dans la même appli.
 
 Le montant de la prime de parrainage varie selon la période et le produit que tu ouvres. Regarde celui affiché sur la page d'inscription avant de te lancer.
