@@ -1,5 +1,6 @@
 import { mkdir, readFile, writeFile } from "node:fs/promises";
 import { transform } from "esbuild";
+import { eleventyImageTransformPlugin } from "@11ty/eleventy-img";
 import { png } from "./scripts/og/image.js";
 
 const shortDate = new Intl.DateTimeFormat("fr-FR", { day: "numeric", month: "short", year: "numeric" });
@@ -8,6 +9,8 @@ const longDate = new Intl.DateTimeFormat("fr-FR", { day: "numeric", month: "long
 export default function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("src/assets");
   eleventyConfig.addPassthroughCopy({ "src/_headers": "_headers", "src/favicon.svg": "favicon.svg" });
+  // Logos servis en WebP (<picture>, PNG en repli) ; les PNG restent la source (CMS, images OG)
+  eleventyConfig.addPlugin(eleventyImageTransformPlugin, { formats: ["webp", "png"], widths: ["auto"], urlPath: "/assets/img/" });
 
   // Minification de la feuille de styles et du script à la génération (pas en --serve)
   eleventyConfig.on("eleventy.after", async ({ dir, runMode }) => {
