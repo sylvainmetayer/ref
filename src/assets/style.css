@@ -126,6 +126,7 @@ kbd { padding: 1px 6px; border: 1px solid var(--line); border-radius: 6px; font-
 .card:hover .card__title h2 a { text-decoration: underline; }
 .card:has(.card__title h2 a:focus-visible) { outline: 2px solid var(--ink); outline-offset: 2px; }
 .card .code-box, .card .meta a { position: relative; z-index: 1; }
+.card .meta a { padding-block: 5px; } /* zone tactile de 24px au-dessus du lien de la carte */
 .meta { display: flex; align-items: center; gap: 6px; font-size: 13px; color: var(--muted); }
 .badge { font-size: 11px; font-weight: 700; padding: 1px 7px; border-radius: 999px; background: var(--ink); color: #FFFFFF; letter-spacing: 0.02em; text-transform: uppercase; }
 .gain { flex: none; margin-left: auto; text-align: right; }
@@ -138,6 +139,7 @@ kbd { padding: 1px 6px; border: 1px solid var(--line); border-radius: 6px; font-
   display: flex; align-items: center; justify-content: center;
   font-weight: 800; font-size: 21px;
 }
+.logo picture { display: contents; }
 .logo img { width: 100%; height: 100%; object-fit: contain; }
 
 .code-box {
