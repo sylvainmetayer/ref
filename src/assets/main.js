@@ -43,7 +43,6 @@ if (filters) {
     });
     count.textContent = shown === cards.length ? "" : plural(shown);
   };
-  filters.hidden = false;
   input.addEventListener("input", apply);
   chips.forEach((chip) => {
     chip.addEventListener("click", () => {
