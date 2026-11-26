@@ -78,6 +78,8 @@
   {%- endif %}
   <link rel="preload" href="/assets/fonts/bricolage-grotesque-latin.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="/assets/style.css">
+  {#- Filtres visibles dès le HTML (les afficher en JS décalait les cartes : CLS 0,19 en mobile) ; sans JS ils ne marchent pas, on les masque. Fichier et non <style> : la CSP interdit le style en ligne #}
+  <noscript><link rel="stylesheet" href="/assets/noscript.css"></noscript>
   <script src="/assets/main.js" defer></script>
   {%- if site.cfBeaconToken %}
   <script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "{{ site.cfBeaconToken }}"}'></script>
